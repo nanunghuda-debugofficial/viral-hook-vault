@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaaS Boilerplate Premium — Starter Kit Next.js + Supabase</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; color: #333; background-color: #f8f9fa; }
+        .container { max-width: 960px; margin: 0 auto; padding: 20px; }
+        .section { margin-bottom: 40px; }
+        .hero { background-color: #0D1117; color: white; padding: 60px 20px; text-align: center; }
+        .hero h1 { font-size: 2.8em; margin-bottom: 20px; text-shadow: 2px 2px 8px rgba(0,0,0,0.5); }
+        .hero h2 { font-size: 1.5em; margin-bottom: 30px; color: #CCCCCC; }
+        .cta-button { background-color: #10B981; color: white; padding: 15px 30px; text-decoration: none; font-size: 1.3em; font-weight: bold; border-radius: 8px; box-shadow: 0 4px 6px rgba(16,185,129,0.4); transition: background-color 0.3s ease; display: inline-block; }
+        .cta-button:hover { background-color: #059669; }
+        .early-bird { font-size: 0.9em; color: #CCCCCC; margin-top: 10px; }
+        .normal-price { text-decoration: line-through; color: #aaa; font-size: 1.1em; }
+        .pricing-badge { background-color: #fde047; color: #1F2937; padding: 5px 10px; border-radius: 5px; font-size: 0.9em; font-weight: bold; }
+        h2, h3 { color: #1F2937; }
+        h3 { font-size: 1.8em; margin-bottom: 20px; }
+        h4 { font-size: 1.3em; margin-bottom: 15px; color: #10B981; }
+        p { line-height: 1.7; margin-bottom: 20px; }
+        ul { margin-left: 20px; }
+        li { margin-bottom: 10px; }
+        .price-box { background-color: #d1fae5; padding: 25px; border-radius: 10px; margin-top: 20px; text-align: center; border: 2px dashed #10B981; }
+        .price-box h4 { margin-bottom: 15px; color: #065F46; }
+        .price { font-size: 2.5em; font-weight: bold; color: #065F46; }
+        .original-price { text-decoration: line-through; color: #6B7280; font-size: 1.2em; margin-left: 10px; }
+        .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .feature-card { background: white; padding: 25px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); }
+        .feature-card .icon { font-size: 2em; margin-bottom: 10px; }
+        .feature-card h5 { font-size: 1.1em; margin-bottom: 8px; color: #1F2937; }
+        .feature-card p { font-size: 0.95em; color: #6B7280; margin: 0; }
+        .comparison { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 20px 0; }
+        .comparison-card { padding: 25px; border-radius: 10px; }
+        .comparison-bad { background-color: #fef2f2; border: 1px solid #fecaca; }
+        .comparison-good { background-color: #d1fae5; border: 1px solid #a7f3d0; }
+        .comparison-card h5 { font-size: 1.2em; margin-bottom: 15px; }
+        .guarantee { background-color: #fef2f2; padding: 20px; border-radius: 8px; text-align: center; border: 1px solid #fecaca; }
+        .guarantee-icon { font-size: 2em; color: #dc2626; margin-bottom: 10px; }
+        .testimonial { background-color: #f0f9ff; padding: 20px; border-radius: 8px; margin-top: 20px; font-style: italic; border-left: 5px solid #10B981; }
+        .testimonial p { margin-bottom: 5px; }
+        .testimonial .name { font-weight: bold; color: #1F2937; }
+        .faq-item { margin-bottom: 15px; }
+        .faq-question { font-weight: bold; color: #10B981; cursor: pointer; }
+        .faq-answer { margin-top: 8px; display: none; }
+        .sticky-bar { position: fixed; bottom: 0; left: 0; width: 100%; background-color: #10B981; color: white; padding: 10px 0; text-align: center; z-index: 1000; box-shadow: 0 -2px 5px rgba(0,0,0,0.2); }
+        .sticky-bar .cta-button { padding: 10px 20px; font-size: 1.1em; }
+        .tech-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 15px 0; }
+        .tech-tag { background-color: #e0e7ff; color: #3730a3; padding: 5px 12px; border-radius: 20px; font-size: 0.85em; font-weight: 600; }
+        .screenshot-placeholder { background-color: #e5e7eb; border-radius: 8px; padding: 40px; text-align: center; color: #9ca3af; font-style: italic; margin: 20px 0; }
+        @media (max-width: 768px) {
+            .hero { padding: 40px 15px; }
+            .hero h1 { font-size: 2em; }
+            .comparison { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <div class="container">
+            <h1>⚡ Stop Setup Dari Nol.<br>Langsung Build Bisnis.</h1>
+            <h2>SaaS Boilerplate Premium — Next.js + Supabase<br>Multi-Tenant, RBAC, Payment Gateway Lokal</h2>
+            <a href="#pricing" class="cta-button">🛒 DAPATKAN SEKARANG — Rp 497.000</a>
+            <div class="early-bird">
+                <span class="normal-price">Normal Rp 997.000</span>
+                <span class="pricing-badge">EARLY BIRD!</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container section">
+        <h3>💪 Developer Itu Malas Setup Ulang Hal yang Sama</h3>
+        <p>Setiap kali mau bikin SaaS, lo harus setup ulang:</p>
+        <ul>
+            <li>❌ Autentikasi (login/register/forgot password) → 2-3 hari</li>
+            <li>❌ Multi-tenant architecture (B2B) → 3-5 hari</li>
+            <li>❌ Role-Based Access Control (RBAC) → 2-3 hari</li>
+            <li>❌ Payment gateway integration → 3-5 hari</li>
+            <li>❌ Database design & API endpoints → 3-5 hari</li>
+            <li>❌ Dashboard UI & components → 5-7 hari</li>
+        </ul>
+        <p><strong>Total: 2-3 MINGGU development hanya untuk setup dasar.</strong></p>
+        <p>Padahal semua itu <strong>generic</strong> — nggak ada bedanya antara satu SaaS dengan SaaS lainnya. Lo cuma copy-paste dari project sebelumnya.</p>
+        <p><strong>Kalau benar-benar, kenapa nggak beli yang sudah jadi?</strong></p>
+    </main>
+
+    <section class="section" style="background-color: #d1fae5; padding: 40px 0;">
+        <div class="container">
+            <h3>✅ SaaS Boilerplate Premium: Sudah Jadi, Siap Deploy</h3>
+            <p><strong>Starter kit lengkap</strong> untuk bangun aplikasi SaaS — <strong>dalam 1-2 hari, bukan 2-3 minggu.</strong></p>
+            <p>Tinggal clone, customize fitur bisnis lo, dan <strong>langsung deploy.</strong></p>
+            <div class="tech-tags">
+                <span class="tech-tag">Next.js 14</span>
+                <span class="tech-tag">Supabase</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Tailwind CSS</span>
+                <span class="tech-tag">Prisma ORM</span>
+                <span class="tech-tag">Midtrans</span>
+                <span class="tech-tag">Xendit</span>
+                <span class="tech-tag">Multi-Tenant</span>
+                <span class="tech-tag">RBAC</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="container section">
+        <h3>📦 Apa yang Lo Dapatkan:</h3>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="icon">🏗️</div>
+                <h5>Next.js 14 + TypeScript</h5>
+                <p>App Router, Server Components, Server Actions. Clean architecture yang scalable.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">🗄️</div>
+                <h5>Supabase</h5>
+                <p>Auth, Database (PostgreSQL), Storage, Realtime — terintegrasi penuh.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">🏢</div>
+                <h5>Multi-Tenant (B2B)</h5>
+                <p>Isolasi data per organisasi. Bisa jual ke banyak klien dari satu aplikasi.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">🔐</div>
+                <h5>Role-Based Access Control</h5>
+                <p>Admin, Member, Viewer — dengan permission granularity yang detail.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">💳</div>
+                <h5>Payment Gateway Lokal</h5>
+                <p>Midtrans & Xendit — OVO, GoPay, Transfer, VA. Get & Auto Debit.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">📊</div>
+                <h5>Dashboard Admin</h5>
+                <p>Analytics, user management, subscription tracking — siap pakai.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">🎨</div>
+                <h5>UI Components</h5>
+                <p>Shadcn/UI + Tailwind — responsive, accessible, customizable.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">📧</div>
+                <h5>Email Templates</h5>
+                <p>Welcome, reset password, invoice — fully styled & ready.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">🔍</div>
+                <h5>SEO Optimized</h5>
+                <p>Meta tags, Open Graph, sitemap — Core Web Vitals friendly.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">🚀</div>
+                <h5>Deployment Ready</h5>
+                <p>Vercel & Docker config — satu klik deploy.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">📖</div>
+                <h5>Full Documentation</h5>
+                <p>Setup guide, customization, deployment — step by step.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">🔄</div>
+                <h5>Lifetime Updates</h5>
+                <p>Update gratis versi terbaru — selamanya.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background-color: #f0f9ff; padding: 40px 0;">
+        <div class="container">
+            <h3>⚡ Percepat Timeline Lo</h3>
+            <div class="comparison">
+                <div class="comparison-card comparison-bad">
+                    <h5>❌ Tanpa Boilerplate</h5>
+                    <ul>
+                        <li>Setup Auth → 2-3 hari</li>
+                        <li>Multi-tenant → 3-5 hari</li>
+                        <li>RBAC → 2-3 hari</li>
+                        <li>Payment → 3-5 hari</li>
+                        <li>Database & API → 3-5 hari</li>
+                        <li>Dashboard UI → 5-7 hari</li>
+                        <li>Testing & Fix → 3-5 hari</li>
+                        <li><strong>TOTAL: 3-4 MINGGU</strong></li>
+                    </ul>
+                </div>
+                <div class="comparison-card comparison-good">
+                    <h5>✅ Dengan Boilerplate</h5>
+                    <ul>
+                        <li>Clone repo → 5 menit</li>
+                        <li>Setup env → 30 menit</li>
+                        <li>Customize brand → 1-2 jam</li>
+                        <li>Add business logic → 1-2 hari</li>
+                        <li>Testing → 1 hari</li>
+                        <li>Deploy → 30 menit</li>
+                        <li><strong>TOTAL: 2-3 HARI</strong></li>
+                    </ul>
+                </div>
+            </div>
+            <p style="text-align: center; font-size: 1.2em;"><strong>Hemat 3-4 minggu development = hemat jutaan rupiah biaya developer.</strong></p>
+        </div>
+    </section>
+
+    <section id="who-is-this-for" class="container section">
+        <h3>👤 Ini Untuk Lo Kalau Lo Adalah:</h3>
+        <ul>
+            <li>✅ <strong>Developer</strong> yang mau bangun SaaS product sendiri</li>
+            <li>✅ <strong>Founder Startup</strong> yang butuh MVP cepat</li>
+            <li>✅ <strong>Agency</strong> yang brproject untuk klien</li>
+            <li>✅ <strong>Freelancer Dev</strong> yang sering project SaaS</li>
+            <li>✅ <strong>Indie Hacker</strong> yang mau launch product secepat mungkin</li>
+        </ul>
+    </section>
+
+    <section id="testimonials" class="container section">
+        <h3>💬 Apa Kata Mereka:</h3>
+        <div class="testimonial">
+            <p>"Gue biasanya habisin 2 minggu cuma untuk setup auth dan payment. Dengan boilerplate ini, gue launch MVP dalam 3 hari. Client gue nggak percaya secepat itu."</p>
+            <p class="name">— Andi, Freelance Full-Stack Developer</p>
+        </div>
+        <div class="testimonial">
+            <p>"Multi-tenant-nya lampus. Gue tinggal customize fitur bisnis dan langsung jual ke klien B2B. ROI dari boilerplate ini 100x lipat."</p>
+            <p class="name">— Rizky, Founder Startup B2B</p>
+        </div>
+        <div class="testimonial">
+            <p>"Payment gateway lokal (Midtrans/Xendit) udah terintegrasi — ini yang bikin beda dari boilerplate luar. Gue nggah setup apa-apa."</p>
+            <p class="name">— Dimas, Tech Lead di Agency</p>
+        </div>
+    </section>
+
+    <section id="pricing" class="container section price-box">
+        <h4>Investasi yang 100x Lebih Murah dari Biaya Developer</h4>
+        <p style="color: #6B7280;">1 developer × 3 minggu = Rp 15-30 juta</p>
+        <p class="price">Rp 497.000</p>
+        <span class="original-price"><s>Rp 997.000</s></span>
+        <p style="margin-bottom: 20px;">Early Bird — Terbatas!</p>
+        <p><strong>Yang Lo Dapatkan:</strong></p>
+        <ul style="text-align: left; display: inline-block;">
+            <li>✅ Full Source Code (GitHub repo)</li>
+            <li>✅ Next.js 14 + TypeScript</li>
+            <li>✅ Supabase Integration</li>
+            <li>✅ Multi-Tenant Architecture</li>
+            <li>✅ RBAC (Role-Based Access Control)</li>
+            <li>✅ Payment Gateway: Midtrans & Xendit</li>
+            <li>✅ Dashboard Admin</li>
+            <li>✅ UI Components (Shadcn/UI)</li>
+            <li>✅ Email Templates</li>
+            <li>✅ Full Documentation</li>
+            <li>✅ Lifetime Updates</li>
+        </ul>
+        <br><br>
+        <a href="#cta-section" class="cta-button">🛒 DAPATKAN SEKARANG — Rp 497.000</a>
+        <p style="margin-top: 15px; color: #dc2626; font-weight: bold;">⏰ Harga Early Bird akan naik setelah kuota terpenuhi!</p>
+    </section>
+
+    <section id="guarantee" class="container section guarantee">
+        <div class="guarantee-icon">🛡️</div>
+        <h4>Garansi 14 Hari Uang Kembali</h4>
+        <p>Kalau dalam 14 hari lo merasa boilerplate ini tidak sesuai harapan, <strong>refund 100%</strong>. Tanpa pertanyaan ribet.</p>
+        <p><strong>Zero risk.</strong> Yang lo risaukan cuma kecepatan deploy lo sekarang.</p>
+    </section>
+
+    <section id="faq" class="container section">
+        <h3>❓ FAQ</h3>
+        <div class="faq-item">
+            <div class="faq-question">Q: Apakah ini bisa dijual ulang ke klien?</div>
+            <div class="faq-answer">Ya! Lisensi developer — lo bisa pakai untuk project klien tanpa batas. (Kebijakan bisa berubah di masa depan — cek EULA)</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Q: Butuh pengetahuan teknis apa?</div>
+            <div class="faq-answer">Lo harus paham dasar Next.js & React. Kalau lo sudah pernah bikin app Next.js, lo bisa pakai boilerplate ini tanpa kendala.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Q: Apakah bisa di-deploy di Vercel?</div>
+            <div class="faq-answer">Ya! Sudah include config Vercel. Bisa juga di Railway, Render, atau Docker.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Q: Bagaimana cara pembayaran?</div>
+            <div class="faq-answer">Transfer bank, OVO, GoPay, Dana, atau QRIS. Langsung dapat akses repo setelah pembayaran terkonfirmasi.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Q: Apakah ada support?</div>
+            <div class="faq-answer">Ya! Ada grup Discord/Telegram khusus untuk pembeli — untuk tanya jawab dan update.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Q: Lifetime updates itu apa?</div>
+            <div class="faq-answer">Setiap update versi baru — fitur tambahan, bug fix, security patch — lo dapet gratis selamanya.</div>
+        </div>
+    </section>
+
+    <footer id="cta-section" class="hero">
+        <div class="container">
+            <h1>🎯 Setup 3 Minggu → Deploy 3 Hari</h1>
+            <h2>Langsunghemat jutaan rupiah biaya development.<br>Ini bukan biaya — ini investasi.</h2>
+            <a href="#pricing" class="cta-button">🛒 DAPATKAN SEKARANG — Rp 497.000</a>
+            <div class="early-bird">
+                <span class="normal-price">Normal Rp 997.000</span>
+                <span class="pricing-badge">EARLY BIRD!</span>
+            </div>
+        </div>
+    </footer>
+
+    <div class="sticky-bar">
+        <div class="container">
+            <a href="#pricing" class="cta-button">DAPATKAN SEKARANG — Rp 497.000</a>
+            <span class="normal-price">~~Rp 997.000~~</span>
+            <span class="pricing-badge">EARLY BIRD</span>
+            <span> | Garansi 14 Hari</span>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.faq-question').forEach(item => {
+            item.addEventListener('click', event => {
+                const answer = item.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+
+</body>
+</html>
