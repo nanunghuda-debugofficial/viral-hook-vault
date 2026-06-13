@@ -9,96 +9,69 @@
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #333; background-color: #f8f9fa; }
         .container { max-width: 1100px; margin: 0 auto; padding: 20px; }
 
-        /* Header */
         .member-header { background-color: #0D1117; color: white; padding: 15px 0; }
         .member-header .container { display: flex; justify-content: space-between; align-items: center; }
         .member-header .logo { font-size: 1.4em; font-weight: bold; }
         .member-header .logo span { color: #3B82F6; }
         .member-header .user-info { font-size: 0.9em; color: #CCCCCC; }
-        .member-header .logout-btn { background: #dc2626; color: white; border: none; padding: 6px 14px; border-radius: 5px; cursor: pointer; font-size: 0.85em; margin-left: 10px; }
 
-        /* Welcome */
         .welcome { background: linear-gradient(135deg, #3B82F6, #8B5CF6); color: white; padding: 40px 20px; text-align: center; margin-bottom: 30px; border-radius: 12px; }
         .welcome h1 { font-size: 2em; margin-bottom: 10px; }
         .welcome p { font-size: 1.1em; opacity: 0.9; }
 
-        /* Stats */
-        .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-bottom: 30px; }
-        .stat-card { background: white; padding: 20px; border-radius: 10px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
-        .stat-card .number { font-size: 2em; font-weight: bold; color: #3B82F6; }
-        .stat-card .label { font-size: 0.9em; color: #6B7280; margin-top: 5px; }
-
-        /* Section Title */
         .section-title { font-size: 1.5em; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid #3B82F6; display: inline-block; }
 
-        /* Category Tabs */
-        .tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 25px; }
-        .tab-btn { background: white; border: 2px solid #e5e7eb; padding: 10px 18px; border-radius: 8px; cursor: pointer; font-size: 0.95em; font-weight: 600; transition: all 0.2s; }
-        .tab-btn:hover { border-color: #3B82F6; color: #3B82F6; }
-        .tab-btn.active { background: #3B82F6; color: white; border-color: #3B82F6; }
-
-        /* Hook Cards */
-        .hooks-grid { display: grid; grid-template-columns: 1fr; gap: 12px; }
-        .hook-card { background: white; padding: 14px 18px; border-radius: 8px; display: flex; align-items: center; gap: 12px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); border-left: 3px solid #3B82F6; }
-        .hook-number { font-size: 0.8em; color: #9CA3AF; min-width: 28px; flex-shrink: 0; }
-        .hook-text { flex: 1; font-size: 0.95em; line-height: 1.5; }
-        .hook-tag { font-size: 0.75em; color: #6B7280; background: #F3F4F6; padding: 3px 8px; border-radius: 12px; white-space: nowrap; }
-        .copy-btn { background: #3B82F6; color: white; border: none; padding: 6px 12px; border-radius: 5px; cursor: pointer; font-size: 0.8em; white-space: nowrap; }
-        .copy-btn:hover { background: #2563EB; }
-        .copy-btn.copied { background: #10B981; }
-
-        /* Download Cards */
+        .download-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-bottom: 30px; }
         .download-card { background: white; padding: 25px; border-radius: 12px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
         .download-card .icon { font-size: 2.5em; margin-bottom: 10px; }
         .download-card h4 { font-size: 1.1em; margin-bottom: 8px; color: #1F2937; }
         .download-card p { font-size: 0.9em; color: #6B7280; margin-bottom: 15px; }
 
-        /* CTA Button */
         .cta-btn { background: #3B82F6; color: white; border: none; padding: 10px 20px; border-radius: 8px; cursor: pointer; font-size: 0.95em; font-weight: 600; display: inline-block; text-decoration: none; }
         .cta-btn:hover { background: #2563EB; }
 
-        /* Search */
-        .search-box { margin-bottom: 20px; }
-        .search-box input { width: 100%; padding: 12px 16px; border: 2px solid #e5e7eb; border-radius: 8px; font-size: 1em; }
-        .search-box input:focus { outline: none; border-color: #3B82F6; }
+        .bonus-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-bottom: 30px; }
+        .bonus-card { background: white; padding: 25px; border-radius: 12px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.06); border-top: 4px solid #8B5CF6; }
+        .bonus-card .icon { font-size: 2.5em; margin-bottom: 10px; }
+        .bonus-card h4 { font-size: 1.1em; margin-bottom: 8px; color: #1F2937; }
+        .bonus-card p { font-size: 0.9em; color: #6B7280; margin-bottom: 15px; }
 
-        /* Load More */
-        .load-more-container { text-align: center; margin-top: 20px; }
-        .load-more-btn { background: white; border: 2px solid #3B82F6; color: #3B82F6; padding: 10px 24px; border-radius: 8px; cursor: pointer; font-size: 0.95em; font-weight: 600; }
-        .load-more-btn:hover { background: #3B82F6; color: white; }
+        .category-section { margin-bottom: 40px; }
+        .category-header { background: white; padding: 20px 25px; border-radius: 12px; margin-bottom: 15px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+        .category-header h3 { font-size: 1.3em; margin-bottom: 5px; color: #1F2937; }
+        .category-header p { font-size: 0.9em; color: #6B7280; margin: 0; }
+        .hook-count { float: right; background: #3B82F6; color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.85em; font-weight: bold; }
 
-        /* Sticky Buy Bar */
-        .sticky-buy { position: fixed; bottom: 0; left: 0; width: 100%; background: #3B82F6; color: white; z-index: 1000; box-shadow: 0 -2px 10px rgba(0,0,0,0.2); }
+        .hook-card { background: white; padding: 14px 18px; border-radius: 8px; display: flex; align-items: center; gap: 12px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); border-left: 3px solid #3B82F6; margin-bottom: 10px; }
+        .hook-number { font-size: 0.8em; color: #9CA3AF; min-width: 28px; flex-shrink: 0; }
+        .hook-text { flex: 1; font-size: 0.95em; line-height: 1.5; }
+        .copy-btn { background: #3B82F6; color: white; border: none; padding: 6px 12px; border-radius: 5px; cursor: pointer; font-size: 0.8em; white-space: nowrap; }
+        .copy-btn:hover { background: #2563EB; }
+        .copy-btn.copied { background: #10B981; }
 
-        /* Modal */
         .modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 2000; justify-content: center; align-items: center; }
         .modal-overlay.active { display: flex; }
         .modal-content { background: white; padding: 30px; border-radius: 12px; max-width: 600px; width: 90%; max-height: 80vh; overflow-y: auto; }
         .modal-close { float: right; background: none; border: none; font-size: 1.5em; cursor: pointer; color: #6B7280; }
+        .modal-content h3 { color: #3B82F6; margin-bottom: 15px; }
+        .modal-content ol { line-height: 2.2; padding-left: 20px; }
+        .modal-content li { margin-bottom: 10px; }
 
-        /* Footer */
         footer { text-align: center; padding: 30px; color: #9CA3AF; font-size: 0.9em; margin-top: 40px; }
 
         @media (max-width: 768px) {
-            .stats { grid-template-columns: 1fr; }
+            .download-grid { grid-template-columns: 1fr; }
+            .bonus-grid { grid-template-columns: 1fr; }
             .hook-card { flex-wrap: wrap; }
-            .hook-tag { display: none; }
         }
     </style>
 </head>
 <body>
 
-<div class="sticky-buy" id="stickyBar" style="display:none;">
-    <div style="max-width:1100px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; padding:10px 20px;">
-        <span style="font-weight:bold;">🎯 Viral Hook Vault — Akses Penuh 300+ Hooks + Bonus</span>
-        <a href="#pricing" class="cta-btn">🛒 BAYAR Rp 49.000</a>
-    </div>
-</div>
-
 <header class="member-header">
     <div class="container">
         <div class="logo">🎯 <span>Viral Hook Vault</span></div>
-        <div class="user-info">Selamat datang, <strong id="userName">Member</strong>!</div>
+        <div class="user-info">👤 Member Area — Akses Penuh</div>
     </div>
 </header>
 
@@ -108,572 +81,1712 @@
         <p>Akses seluruh 300+ hook konten viral + bonus eksklusif di bawah ini.</p>
     </div>
 
-    <!-- A. DOWNLOAD SECTION -->
-    <h2 class="section-title" style="margin-top:10px;">📦 Download Produk</h2>
-    <div class="stats" style="margin-bottom:30px;">
+    <h2 class="section-title">📦 Download Produk</h2>
+    <div class="download-grid">
         <div class="download-card">
             <div class="icon">📄</div>
             <h4>PDF — 300+ Hooks Lengkap</h4>
             <p>Semua hook dalam format PDF. Bisa di-read di HP/laptop. Siap cetak.</p>
-            <button class="cta-btn" onclick="downloadFile('pdf')">⬇️ Download PDF</button>
+            <button class="cta-btn" onclick="alert('PDF akan di-download. File: Viral-Hook-Vault-300-Hooks.pdf')">⬇️ Download PDF</button>
         </div>
         <div class="download-card">
             <div class="icon">📊</div>
             <h4>Google Sheets — Copy-Paste Ready</h4>
             <p>Hooks dalam spreadsheet. Tinggal copy, edit, langsung pakai.</p>
-            <button class="cta-btn" onclick="downloadFile('sheets')">⬇️ Buka Sheets</button>
+            <button class="cta-btn" onclick="alert('Membuka Google Sheets...')">⬇️ Buka Sheets</button>
         </div>
         <div class="download-card">
             <div class="icon">🎨</div>
             <h4>Canva — 50 Hook Templates</h4>
             <p>Template visual untuk Story & TikTok. Ganti teks, jadi!</p>
-            <button class="cta-btn" onclick="downloadFile('canva')">⬇️ Buka Canva</button>
+            <button class="cta-btn" onclick="alert('Membuka Canva Templates...')">⬇️ Buka Canva</button>
         </div>
     </div>
 
-    <!-- B. BONUS SECTION -->
     <h2 class="section-title" style="margin-top:30px;">🎁 Bonus Eksklusif</h2>
-    <div class="stats" style="margin-bottom:30px;">
-        <div class="download-card">
+    <div class="bonus-grid">
+        <div class="bonus-card">
             <div class="icon">📐</div>
             <h4>Hook Formula Cheat Sheet</h4>
             <p>5 formula universal bikin hook viral untuk NAPUN niche.</p>
-            <button class="cta-btn" onclick="showBonus('formula')">📖 Lihat Formula</button>
+            <button class="cta-btn" onclick="showBonus()">📖 Lihat Formula</button>
         </div>
-        <div class="download-card">
+        <div class="bonus-card">
             <div class="icon">🔍</div>
-            <h4>Hook Auditor</h4>
-            <p>Google Sheets untuk nge-score hook konten lo sebelum posting.</p>
-            <button class="cta-btn" onclick="downloadFile('auditor')">⬇️ Buka Auditor</button>
+            <h4>Hook Auditor (Google Sheets)</h4>
+            <p>Tools untuk nge-score hook konten lo sebelum posting.</p>
+            <button class="cta-btn" onclick="alert('Membuka Hook Auditor...')">⬇️ Buka Auditor</button>
         </div>
-        <div class="download-card">
+        <div class="bonus-card">
             <div class="icon">📹</div>
             <h4>Swipe File — 50 Konten Viral</h4>
             <p>Screenshot 50 konten viral dengan bedah pola hook-nya.</p>
-            <button class="cta-btn" onclick="downloadFile('swipe')">⬇️ Download</button>
+            <button class="cta-btn" onclick="alert('Download Swipe File...')">⬇️ Download</button>
         </div>
     </div>
 
-    <!-- C. ALL HOOKS (Interactive) -->
     <h2 class="section-title" style="margin-top:30px;">🔥 300+ Hooks Konten Viral</h2>
-    <p style="margin-bottom:15px; color:#6B7280;">Klik kategori untuk melihat hook. Tinggal copy & paste!</p>
-    <div class="tabs" id="categoryTabs">
-        <button class="tab-btn active" onclick="showCategory('curiosity')">🎯 Curiosity (50)</button>
-        <button class="tab-btn" onclick="showCategory('shock')">😱 Shock Value (50)</button>
-        <button class="tab-btn" onclick="showCategory('money')">💰 Money (40)</button>
-        <button class="tab-btn" onclick="showCategory('emotional')">❤️ Emotional (40)</button>
-        <button class="tab-btn" onclick="showCategory('controversial')">🔥 Controversial (30)</button>
-        <button class="tab-btn" onclick="showCategory('edukasi')">📚 Edukasi (40)</button>
-        <button class="tab-btn" onclick="showCategory('story')">🎬 Story (30)</button>
-        <button class="tab-btn" onclick="showCategory('urgency')">⏰ Urgency & FOMO (20)</button>
+    <p style="margin-bottom:20px; color:#6B7280;">Semua hook sudah siap pakai. Tinggal copy & paste!</p>
+
+    <div class="category-section" id="curiosity">
+        <div class="category-header">
+            <span class="hook-count">50 hooks</span>
+            <h3>🎯 Curiosity Hooks</h3>
+            <p>Bikin penasaran — orang HARUS lanjut nonton/baca</p>
+        </div>
+        <div class="hooks-list">
+            <div class="hook-card">
+            <span class="hook-number">1</span>
+            <span class="hook-text">Ini yang nggak pernah diajarin siapapun soal uang...</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini yang nggak pernah diajarin siapapun soal uang...')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">2</span>
+            <span class="hook-text">Ternyata cara kita masak nasi selama ini SALAH.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ternyata cara kita masak nasi selama ini SALAH.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">3</span>
+            <span class="hook-text">Ada satu aplikasi yang dipake 10 juta orang tapi kamu belum tau.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ada satu aplikasi yang dipake 10 juta orang tapi kamu belum tau.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">4</span>
+            <span class="hook-text">Gue nemu cara dapetin hasil terbaik dalam 30 menit — dan ini nyata.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Gue nemu cara dapetin hasil terbaik dalam 30 menit — dan ini nyata.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">5</span>
+            <span class="hook-text">Kenapa orang kaya selalu bilang ini soal keuangan?</span>
+            <button class="copy-btn" onclick="copyText(this, 'Kenapa orang kaya selalu bilang ini soal keuangan?')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">6</span>
+            <span class="hook-text">Ini alasan kenapa konten lo sepi — dan lo nggak sadar.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini alasan kenapa konten lo sepi — dan lo nggak sadar.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">7</span>
+            <span class="hook-text">Satu hal yang bedain orang sukses dan orang biasa...</span>
+            <button class="copy-btn" onclick="copyText(this, 'Satu hal yang bedain orang sukses dan orang biasa...')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">8</span>
+            <span class="hook-text">Lo tau nggak kenapa banyak hal tiba-tiba viral? Ini rahasianya.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo tau nggak kenapa banyak hal tiba-tiba viral? Ini rahasianya.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">9</span>
+            <span class="hook-text">Gue coba ini selama 7 hari dan hasilnya bikin gue kaget.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Gue coba ini selama 7 hari dan hasilnya bikin gue kaget.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">10</span>
+            <span class="hook-text">Ini yang terjadi kalau lo bangun jam 3 pagi selama 30 hari.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini yang terjadi kalau lo bangun jam 3 pagi selama 30 hari.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">11</span>
+            <span class="hook-text">Ternyata produk mahal punya versi Rp 0 — ini caranya.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ternyata produk mahal punya versi Rp 0 — ini caranya.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">12</span>
+            <span class="hook-text">Kenapa 90% orang gagal di bisnis online? Ini jawabannya.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Kenapa 90% orang gagal di bisnis online? Ini jawabannya.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">13</span>
+            <span class="hook-text">Gue baru tau soal ini minggu lalu dan gue nggak bisa tidur.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Gue baru tau soal ini minggu lalu dan gue nggak bisa tidur.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">14</span>
+            <span class="hook-text">Ini trik yang dipake content creator tapi nggak pernah di-share.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini trik yang dipake content creator tapi nggak pernah di-share.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">15</span>
+            <span class="hook-text">Kalau lo lakuin ini tiap hari, hidup lo bakal berubah drastis.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Kalau lo lakuin ini tiap hari, hidup lo bakal berubah drastis.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">16</span>
+            <span class="hook-text">Ternyata banyak hal umum itu bohong besar — ini buktinya.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ternyata banyak hal umum itu bohong besar — ini buktinya.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">17</span>
+            <span class="hook-text">Lo lagi dibohongi — dan ini faktanya.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo lagi dibohongi — dan ini faktanya.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">18</span>
+            <span class="hook-text">Ini yang bakal terjadi di waktu dekat kalau lo nggak mulai sekarang.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini yang bakal terjadi di waktu dekat kalau lo nggak mulai sekarang.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">19</span>
+            <span class="hook-text">Gue riset 100 konten viral dan nemu pola ini...</span>
+            <button class="copy-btn" onclick="copyText(this, 'Gue riset 100 konten viral dan nemu pola ini...')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">20</span>
+            <span class="hook-text">Satu kata yang bisa ubah seluruh bisnis lo.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Satu kata yang bisa ubah seluruh bisnis lo.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">21</span>
+            <span class="hook-text">Kenapa lo nggak pernah dengar soal ini? Ini penjelasannya.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Kenapa lo nggak pernah dengar soal ini? Ini penjelasannya.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">22</span>
+            <span class="hook-text">Ini rahasia yang dipendam industri besar dari kita.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini rahasia yang dipendam industri besar dari kita.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">23</span>
+            <span class="hook-text">Lo tau nggak? Fakta mengejutkan ini — dan ini dampaknya.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo tau nggak? Fakta mengejutkan ini — dan ini dampaknya.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">24</span>
+            <span class="hook-text">Gue test 10 cara berbeda dan cuma 1 yang beneran kerja.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Gue test 10 cara berbeda dan cuma 1 yang beneran kerja.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">25</span>
+            <span class="hook-text">Ini yang terjadi kalau lo stop kebiasaan umum selama 30 hari.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini yang terjadi kalau lo stop kebiasaan umum selama 30 hari.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">26</span>
+            <span class="hook-text">Ternyata orang terkenal pakai trik ini — dan ini bukan rahasia.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ternyata orang terkenal pakai trik ini — dan ini bukan rahasia.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">27</span>
+            <span class="hook-text">Kenapa hal yang lo percaya selama ini itu salah?</span>
+            <button class="copy-btn" onclick="copyText(this, 'Kenapa hal yang lo percaya selama ini itu salah?')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">28</span>
+            <span class="hook-text">Ini satu hal yang gue berani taruhin semua uang gue.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini satu hal yang gue berani taruhin semua uang gue.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">29</span>
+            <span class="hook-text">Lo bakal nggak percaya kalau tau berapa banyak yang lo buang.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo bakal nggak percaya kalau tau berapa banyak yang lo buang.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">30</span>
+            <span class="hook-text">Gue nemu pola ini setelah nonton 500+ konten viral.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Gue nemu pola ini setelah nonton 500+ konten viral.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">31</span>
+            <span class="hook-text">Ini yang bikin konten creator terkenal selalu tembus 10 juta views.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini yang bikin konten creator terkenal selalu tembus 10 juta views.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">32</span>
+            <span class="hook-text">Ternyata ada cara yang 10x lebih cepat — dan gratis.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ternyata ada cara yang 10x lebih cepat — dan gratis.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">33</span>
+            <span class="hook-text">Kenapa lo masih lakuin cara lama kalau ada cara yang lebih gampang?</span>
+            <button class="copy-btn" onclick="copyText(this, 'Kenapa lo masih lakuin cara lama kalau ada cara yang lebih gampang?')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">34</span>
+            <span class="hook-text">Ini yang gue pelajarin setelah gagal 5 kali di bisnis online.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini yang gue pelajarin setelah gagal 5 kali di bisnis online.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">35</span>
+            <span class="hook-text">Lo tau kenapa sesuatu viral? Bukan karena kontennya — tapi karena INI.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo tau kenapa sesuatu viral? Bukan karena kontennya — tapi karena INI.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">36</span>
+            <span class="hook-text">Satu perubahan kecil yang bikin engagement gue naik 300%.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Satu perubahan kecil yang bikin engagement gue naik 300%.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">37</span>
+            <span class="hook-text">Ini yang nggak orang bilang soal topik populer.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini yang nggak orang bilang soal topik populer.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">38</span>
+            <span class="hook-text">Gue coba semua metode populer — ini ranking-nya dari terburuk ke terbaik.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Gue coba semua metode populer — ini ranking-nya dari terburuk ke terbaik.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">39</span>
+            <span class="hook-text">Kenapa sesuatu yang lo pikir benar, justru bikin lo gagal?</span>
+            <button class="copy-btn" onclick="copyText(this, 'Kenapa sesuatu yang lo pikir benar, justru bikin lo gagal?')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">40</span>
+            <span class="hook-text">Ini fakta tentang sesuatu yang bikin gue merinding.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini fakta tentang sesuatu yang bikin gue merinding.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">41</span>
+            <span class="hook-text">Lo lagi kehilangan sesuatu setiap hari tanpa lo sadar.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo lagi kehilangan sesuatu setiap hari tanpa lo sadar.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">42</span>
+            <span class="hook-text">Ternyata hal sederhana ini adalah kunci dari semua konten viral.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ternyata hal sederhana ini adalah kunci dari semua konten viral.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">43</span>
+            <span class="hook-text">Ini yang terjadi kalau lo apply teori ini selama 1 minggu.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini yang terjadi kalau lo apply teori ini selama 1 minggu.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">44</span>
+            <span class="hook-text">Gue nggak percaya sampai gue buktiin sendiri — dan ini hasilnya.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Gue nggak percaya sampai gue buktiin sendiri — dan ini hasilnya.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">45</span>
+            <span class="hook-text">Kenapa 99% tutorial di internet itu salah?</span>
+            <button class="copy-btn" onclick="copyText(this, 'Kenapa 99% tutorial di internet itu salah?')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">46</span>
+            <span class="hook-text">Ini satu hal yang selalu ada di konten yang tembus 1 juta views.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini satu hal yang selalu ada di konten yang tembus 1 juta views.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">47</span>
+            <span class="hook-text">Lo bakal menyesal kalau nggak tau ini 5 tahun lalu.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo bakal menyesal kalau nggak tau ini 5 tahun lalu.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">48</span>
+            <span class="hook-text">Ternyata yang kita pikir susah, sebenernya gampang banget.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ternyata yang kita pikir susah, sebenernya gampang banget.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">49</span>
+            <span class="hook-text">Ini pola yang gue temuin dari 200+ konten viral.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini pola yang gue temuin dari 200+ konten viral.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">50</span>
+            <span class="hook-text">Satu hal yang gue berani jamin bakal ubah cara lo bikin konten.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Satu hal yang gue berani jamin bakal ubah cara lo bikin konten.')">📋 Copy</button>
+        </div>
+
+        </div>
     </div>
-    <div class="search-box">
-        <input type="text" id="searchInput" placeholder="🔍 Cari hook... (contoh: uang, bisnis, viral)" oninput="searchHooks()">
+
+    <div class="category-section" id="shock">
+        <div class="category-header">
+            <span class="hook-count">50 hooks</span>
+            <h3>😱 Shock Value Hooks</h3>
+            <p>Bikin kaget — stop the scroll</p>
+        </div>
+        <div class="hooks-list">
+            <div class="hook-card">
+            <span class="hook-number">51</span>
+            <span class="hook-text">Gue bayar Rp 500 ribu untuk course ini — dan ini yang gue dapetin.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Gue bayar Rp 500 ribu untuk course ini — dan ini yang gue dapetin.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">52</span>
+            <span class="hook-text">Lo tau nggak? Gue bisa dapetin 1 juta views dengan konten 15 detik.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo tau nggak? Gue bisa dapetin 1 juta views dengan konten 15 detik.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">53</span>
+            <span class="hook-text">Ini yang terjadi kalau lo post konten setiap hari selama 365 hari.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini yang terjadi kalau lo post konten setiap hari selama 365 hari.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">54</span>
+            <span class="hook-text">Gue dari nol sampai 100K followers dalam 3 bulan — ini caranya.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Gue dari nol sampai 100K followers dalam 3 bulan — ini caranya.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">55</span>
+            <span class="hook-text">Lo nggak perlu modal jutaan untuk mulai bisnis — ini buktinya.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo nggak perlu modal jutaan untuk mulai bisnis — ini buktinya.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">56</span>
+            <span class="hook-text">Gue quit job gue setelah dapetin Rp 10 juta dari konten.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Gue quit job gue setelah dapetin Rp 10 juta dari konten.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">57</span>
+            <span class="hook-text">Ini yang nggak orang bilang soal jadi content creator.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini yang nggak orang bilang soal jadi content creator.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">58</span>
+            <span class="hook-text">Gue bikin konten dari kamar kos — sekarang penghasilan gue berlipat.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Gue bikin konten dari kamar kos — sekarang penghasilan gue berlipat.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">59</span>
+            <span class="hook-text">Lo bisa dapetin hasil terbaik tanpa pengalaman, tanpa modal, tanpa koneksi.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo bisa dapetin hasil terbaik tanpa pengalaman, tanpa modal, tanpa koneksi.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">60</span>
+            <span class="hook-text">Ini kebenaran soal industri yang bikin gue marah.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini kebenaran soal industri yang bikin gue marah.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">61</span>
+            <span class="hook-text">Gue test ini selama 90 hari — hasilnya nggak masuk akal.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Gue test ini selama 90 hari — hasilnya nggak masuk akal.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">62</span>
+            <span class="hook-text">Lo tau berapa banyak uang yang lo buang karena hal sepele?</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo tau berapa banyak uang yang lo buang karena hal sepele?')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">63</span>
+            <span class="hook-text">Ini yang terjadi kalau lo konsisten 1 tahun di satu platform.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini yang terjadi kalau lo konsisten 1 tahun di satu platform.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">64</span>
+            <span class="hook-text">Gue nggak punya pengalaman — tapi gue dapetin hasil dalam 30 hari.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Gue nggak punya pengalaman — tapi gue dapetin hasil dalam 30 hari.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">65</span>
+            <span class="hook-text">Ini fakta yang bikin gue nggak bisa tidur semalam.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini fakta yang bikin gue nggak bisa tidur semalam.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">66</span>
+            <span class="hook-text">Lo lagi dibohongi — dan ini bukti konkretnya.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo lagi dibohongi — dan ini bukti konkretnya.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">67</span>
+            <span class="hook-text">Gue coba hal yang katanya 'nggak mungkin' — dan ini yang terjadi.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Gue coba hal yang katanya \'nggak mungkin\' — dan ini yang terjadi.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">68</span>
+            <span class="hook-text">Ini yang bakal terjadi kalau lo nggak berubah mulai hari ini.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini yang bakal terjadi kalau lo nggak berubah mulai hari ini.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">69</span>
+            <span class="hook-text">Gue habisin Rp 10 juta untuk ini — ini pelajaran yang gue dapetin.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Gue habisin Rp 10 juta untuk ini — ini pelajaran yang gue dapetin.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">70</span>
+            <span class="hook-text">Lo nggak butuh followers banyak — lo butuh INI.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo nggak butuh followers banyak — lo butuh INI.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">71</span>
+            <span class="hook-text">Ini yang gue pelajarin dari orang yang penghasilannya 10x lipat gue.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini yang gue pelajarin dari orang yang penghasilannya 10x lipat gue.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">72</span>
+            <span class="hook-text">Gue gagal 3 kali sebelum akhirnya nemu cara yang bener.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Gue gagal 3 kali sebelum akhirnya nemu cara yang bener.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">73</span>
+            <span class="hook-text">Lo tau nggak kenapa yang lo lakuin tiap hari itu sia-sia?</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo tau nggak kenapa yang lo lakuin tiap hari itu sia-sia?')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">74</span>
+            <span class="hook-text">Ini yang terjadi kalau lo ikutin cara 'resmi' vs cara yang beneran kerja.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini yang terjadi kalau lo ikutin cara \'resmi\' vs cara yang beneran kerja.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">75</span>
+            <span class="hook-text">Gue nyangka ini scam — ternyata ini hal terbaik yang pernah gue coba.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Gue nyangka ini scam — ternyata ini hal terbaik yang pernah gue coba.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">76</span>
+            <span class="hook-text">Lo bakal kaget tau berapa banyak yang bisa lo dapetin.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo bakal kaget tau berapa banyak yang bisa lo dapetin.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">77</span>
+            <span class="hook-text">Ini yang nggak diajarin di sekolah soal uang.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini yang nggak diajarin di sekolah soal uang.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">78</span>
+            <span class="hook-text">Gue dari minus Rp 5 juta sampai positif — ini timeline-nya.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Gue dari minus Rp 5 juta sampai positif — ini timeline-nya.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">79</span>
+            <span class="hook-text">Lo nggak perlu jago editing — lo perlu ini.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo nggak perlu jago editing — lo perlu ini.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">80</span>
+            <span class="hook-text">Ini yang bikin konten gue naik dari 100 views ke 1 juta views.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini yang bikin konten gue naik dari 100 views ke 1 juta views.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">81</span>
+            <span class="hook-text">Gue nggak percaya sampai gue liat sendiri — dan ini nyata.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Gue nggak percaya sampai gue liat sendiri — dan ini nyata.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">82</span>
+            <span class="hook-text">Lo tau nggak? Fakta mengejutkan ini — dan ini bikin gue berpikir ulang.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo tau nggak? Fakta mengejutkan ini — dan ini bikin gue berpikir ulang.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">83</span>
+            <span class="hook-text">Ini yang terjadi kalau lo stop nonton ini di tengah jalan.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini yang terjadi kalau lo stop nonton ini di tengah jalan.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">84</span>
+            <span class="hook-text">Gue bayar mahal untuk tau ini — sekarang gue kasih gratis.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Gue bayar mahal untuk tau ini — sekarang gue kasih gratis.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">85</span>
+            <span class="hook-text">Lo nggak butuh izin siapapun untuk mulai.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo nggak butuh izin siapapun untuk mulai.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">86</span>
+            <span class="hook-text">Ini yang gue berani taruhin nama gue — karena ini 100% nyata.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini yang gue berani taruhin nama gue — karena ini 100% nyata.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">87</span>
+            <span class="hook-text">Gue test semua — dan cuma ini yang beneran hasilnya instant.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Gue test semua — dan cuma ini yang beneran hasilnya instant.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">88</span>
+            <span class="hook-text">Lo bakal nyesal kalau nggak mulai hari ini.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo bakal nyesal kalau nggak mulai hari ini.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">89</span>
+            <span class="hook-text">Ini yang bedain orang yang 'coba' dan orang yang 'beneran'.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini yang bedain orang yang \'coba\' dan orang yang \'beneran\'.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">90</span>
+            <span class="hook-text">Gue nggak pernah menyangka ini bisa terjadi — sampai ini terjadi.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Gue nggak pernah menyangka ini bisa terjadi — sampai ini terjadi.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">91</span>
+            <span class="hook-text">Lo tau kenapa banyak orang gagal? Karena mereka nggak tau ini.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo tau kenapa banyak orang gagal? Karena mereka nggak tau ini.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">92</span>
+            <span class="hook-text">Ini yang gue pelajarin setelah kehilangan segalanya.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini yang gue pelajarin setelah kehilangan segalanya.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">93</span>
+            <span class="hook-text">Gue dari zero hero — dan ini bukan keberuntungan.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Gue dari zero hero — dan ini bukan keberuntungan.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">94</span>
+            <span class="hook-text">Lo nggak perlu sempurna — lo perlu mulai.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo nggak perlu sempurna — lo perlu mulai.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">95</span>
+            <span class="hook-text">Ini yang terjadi kalau lo commit 30 hari ke satu hal.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini yang terjadi kalau lo commit 30 hari ke satu hal.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">96</span>
+            <span class="hook-text">Gue nggak dibayar untuk ngomong ini — gue ngomong karena ini penting.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Gue nggak dibayar untuk ngomong ini — gue ngomong karena ini penting.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">97</span>
+            <span class="hook-text">Lo bakal kaget — ini lebih gampang dari yang lo kira.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo bakal kaget — ini lebih gampang dari yang lo kira.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">98</span>
+            <span class="hook-text">Ini yang nggak orang mau dengar — tapi perlu didenger.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini yang nggak orang mau dengar — tapi perlu didenger.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">99</span>
+            <span class="hook-text">Gue buktiin sendiri — dan sekarang gue kasih tau lo.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Gue buktiin sendiri — dan sekarang gue kasih tau lo.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">100</span>
+            <span class="hook-text">Lo bisa ignore ini — tapi lo bakal menyesal.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo bisa ignore ini — tapi lo bakal menyesal.')">📋 Copy</button>
+        </div>
+
+        </div>
     </div>
-    <div class="hooks-grid" id="hooksGrid">
-        <!-- Dynamically filled -->
+
+    <div class="category-section" id="money">
+        <div class="category-header">
+            <span class="hook-count">40 hooks</span>
+            <h3>💰 Money Hooks</h3>
+            <p>Tentang uang, penghasilan, bisnis — selalu viral</p>
+        </div>
+        <div class="hooks-list">
+            <div class="hook-card">
+            <span class="hook-number">101</span>
+            <span class="hook-text">Cara gue dapetin penghasilan pertama dari internet — modal HP doang.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Cara gue dapetin penghasilan pertama dari internet — modal HP doang.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">102</span>
+            <span class="hook-text">Lo tau nggak? Ada orang yang dapetin Rp 50 juta sebulan dari digital.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo tau nggak? Ada orang yang dapetin Rp 50 juta sebulan dari digital.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">103</span>
+            <span class="hook-text">Ini 3 cara dapetin uang dari rumah yang beneran kerja di 2024.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini 3 cara dapetin uang dari rumah yang beneran kerja di 2024.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">104</span>
+            <span class="hook-text">Gue mulai dari nol — sekarang penghasilan gue berlipat per bulan.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Gue mulai dari nol — sekarang penghasilan gue berlipat per bulan.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">105</span>
+            <span class="hook-text">Ini bisnis sampingan yang bisa lo mulai minggu depan.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini bisnis sampingan yang bisa lo mulai minggu depan.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">106</span>
+            <span class="hook-text">Lo nggak butuh modal gede — lo butuh strategi yang bener.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo nggak butuh modal gede — lo butuh strategi yang bener.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">107</span>
+            <span class="hook-text">Cara gue naikin penghasilan 10x dalam 6 bulan.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Cara gue naikin penghasilan 10x dalam 6 bulan.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">108</span>
+            <span class="hook-text">Ini yang orang kaya lakuin dengan uangnya — dan orang biasa nggak.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini yang orang kaya lakuin dengan uangnya — dan orang biasa nggak.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">109</span>
+            <span class="hook-text">Gue dapetin uang dari satu konten — ini cara-nya.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Gue dapetin uang dari satu konten — ini cara-nya.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">110</span>
+            <span class="hook-text">Lo tau nggak cara dapetin uang sambil tidur? Ini konsepnya.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo tau nggak cara dapetin uang sambil tidur? Ini konsepnya.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">111</span>
+            <span class="hook-text">Ini 5 skill yang bisa langsung lo jual — bahkan tanpa pengalaman.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini 5 skill yang bisa langsung lo jual — bahkan tanpa pengalaman.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">112</span>
+            <span class="hook-text">Gue quit job corporate — ini perbandingan penghasilan gue.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Gue quit job corporate — ini perbandingan penghasilan gue.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">113</span>
+            <span class="hook-text">Cara dapetin penghasilan dollar dari Indonesia — tanpa keluar rumah.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Cara dapetin penghasilan dollar dari Indonesia — tanpa keluar rumah.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">114</span>
+            <span class="hook-text">Ini yang gue pelajarin soal uang setelah baca 50 buku.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini yang gue pelajarin soal uang setelah baca 50 buku.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">115</span>
+            <span class="hook-text">Lo bisa mulai bisnis dengan modal Rp 0 — ini caranya.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo bisa mulai bisnis dengan modal Rp 0 — ini caranya.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">116</span>
+            <span class="hook-text">Ini kesalahan soal uang yang bikin orang tetap miskin.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini kesalahan soal uang yang bikin orang tetap miskin.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">117</span>
+            <span class="hook-text">Gue dari gaji 3 juta sampai penghasilan 30 juta — ini journey-nya.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Gue dari gaji 3 juta sampai penghasilan 30 juta — ini journey-nya.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">118</span>
+            <span class="hook-text">Lo tau nggak? Banyak hal bisa jadi mesin uang kalau lo tau caranya.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo tau nggak? Banyak hal bisa jadi mesin uang kalau lo tau caranya.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">119</span>
+            <span class="hook-text">Ini formula gue untuk dapetin penghasilan pasif.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini formula gue untuk dapetin penghasilan pasif.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">120</span>
+            <span class="hook-text">Cara gue bangun sumber penghasilan dari 0 sampai 5 dalam 1 tahun.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Cara gue bangun sumber penghasilan dari 0 sampai 5 dalam 1 tahun.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">121</span>
+            <span class="hook-text">Lo nggak perlu kaya — lo perlu ngerti cara kerja uang.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo nggak perlu kaya — lo perlu ngerti cara kerja uang.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">122</span>
+            <span class="hook-text">Ini yang bedain orang yang 'cari uang' dan orang yang 'bangun aset'.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini yang bedain orang yang \'cari uang\' dan orang yang \'bangun aset\'.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">123</span>
+            <span class="hook-text">Gue test 7 cara dapetin uang online — ini hasil jujur gue.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Gue test 7 cara dapetin uang online — ini hasil jujur gue.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">124</span>
+            <span class="hook-text">Lo tau nggak cara dapetin komisi 50% dari jualan orang lain?</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo tau nggak cara dapetin komisi 50% dari jualan orang lain?')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">125</span>
+            <span class="hook-text">Ini bisnis yang bisa lo jalanin sambil kerja kantoran.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini bisnis yang bisa lo jalanin sambil kerja kantoran.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">126</span>
+            <span class="hook-text">Cara gue dapetin first Rp 1 juta dari platform digital.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Cara gue dapetin first Rp 1 juta dari platform digital.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">127</span>
+            <span class="hook-text">Lo nggak butuh followers 100K — lo butuh 100 pembeli.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo nggak butuh followers 100K — lo butuh 100 pembeli.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">128</span>
+            <span class="hook-text">Ini yang gue lakuin berbeda — dan ini hasilnya.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini yang gue lakuin berbeda — dan ini hasilnya.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">129</span>
+            <span class="hook-text">Gue nggak punya product sendiri — tapi gue dapetin penghasilan tetap per bulan.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Gue nggak punya product sendiri — tapi gue dapetin penghasilan tetap per bulan.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">130</span>
+            <span class="hook-text">Lo tau nggak? Orang yang dapetin banyak uang itu pakai strategi ini.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo tau nggak? Orang yang dapetin banyak uang itu pakai strategi ini.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">131</span>
+            <span class="hook-text">Ini cara dapetin uang dari skill yang lo punya sekarang.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini cara dapetin uang dari skill yang lo punya sekarang.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">132</span>
+            <span class="hook-text">Gue mulai dari nggak punya apa-apa — sekarang hasil nyata.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Gue mulai dari nggak punya apa-apa — sekarang hasil nyata.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">133</span>
+            <span class="hook-text">Lo bisa dapetin penghasilan tetap per bulan — dan ini bukan MLM.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo bisa dapetin penghasilan tetap per bulan — dan ini bukan MLM.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">134</span>
+            <span class="hook-text">Ini yang nggak orang bilang soal dapetin uang dari internet.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini yang nggak orang bilang soal dapetin uang dari internet.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">135</span>
+            <span class="hook-text">Cara gue convert followers jadi pembeli — step by step.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Cara gue convert followers jadi pembeli — step by step.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">136</span>
+            <span class="hook-text">Lo tau nggak? Satu konten bisa menghasilkan uang — ini caranya.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo tau nggak? Satu konten bisa menghasilkan uang — ini caranya.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">137</span>
+            <span class="hook-text">Ini 3 bisnis digital yang paling cocok untuk pemula di 2024.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini 3 bisnis digital yang paling cocok untuk pemula di 2024.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">138</span>
+            <span class="hook-text">Gue habisin waktu 6 bulan untuk nemu cara ini — dan ini hasilnya.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Gue habisin waktu 6 bulan untuk nemu cara ini — dan ini hasilnya.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">139</span>
+            <span class="hook-text">Lo nggak perlu jago jualan — lo perlu jago bikin konten.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo nggak perlu jago jualan — lo perlu jago bikin konten.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">140</span>
+            <span class="hook-text">Ini yang bakal ubah cara lo mikirin uang — selamanya.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini yang bakal ubah cara lo mikirin uang — selamanya.')">📋 Copy</button>
+        </div>
+
+        </div>
     </div>
-    <div class="load-more-container" id="loadMoreContainer" style="display:none;">
-        <button class="load-more-btn" onclick="loadMore()">➕ Load More Hooks</button>
+
+    <div class="category-section" id="emotional">
+        <div class="category-header">
+            <span class="hook-count">40 hooks</span>
+            <h3>❤️ Emotional Hooks</h3>
+            <p>Sentuh hati — personal & relatable</p>
+        </div>
+        <div class="hooks-list">
+            <div class="hook-card">
+            <span class="hook-number">141</span>
+            <span class="hook-text">Gue nggak pernah cerita ini ke siapapun — sampai sekarang.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Gue nggak pernah cerita ini ke siapapun — sampai sekarang.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">142</span>
+            <span class="hook-text">Ini yang gue pelajarin setelah gagal total di depan umum.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini yang gue pelajarin setelah gagal total di depan umum.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">143</span>
+            <span class="hook-text">Lo tau nggak rasanya dibilang 'nggak bakal bisa' sama semua orang?</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo tau nggak rasanya dibilang \'nggak bakal bisa\' sama semua orang?')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">144</span>
+            <span class="hook-text">Gue menangis tadi malem — dan ini alasannya.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Gue menangis tadi malem — dan ini alasannya.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">145</span>
+            <span class="hook-text">Ini surat gue untuk diri gue 5 tahun lalu.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini surat gue untuk diri gue 5 tahun lalu.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">146</span>
+            <span class="hook-text">Lo nggak sendirian — gue juga pernah ngerasain ini.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo nggak sendirian — gue juga pernah ngerasain ini.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">147</span>
+            <span class="hook-text">Ini yang terjadi kalau lo terus-terusan nggak percaya diri.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini yang terjadi kalau lo terus-terusan nggak percaya diri.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">148</span>
+            <span class="hook-text">Gue hampir menyerah — tapi satu hal ini yang bikin gue bertahan.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Gue hampir menyerah — tapi satu hal ini yang bikin gue bertahan.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">149</span>
+            <span class="hook-text">Lo tau nggak? Hal kecil ini yang bikin gue berubah total.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo tau nggak? Hal kecil ini yang bikin gue berubah total.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">150</span>
+            <span class="hook-text">Ini momen yang bikin gue sadar — gue harus berubah.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini momen yang bikin gue sadar — gue harus berubah.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">151</span>
+            <span class="hook-text">Gue nggak tau mau kemana — tapi gue tetep jalan.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Gue nggak tau mau kemana — tapi gue tetep jalan.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">152</span>
+            <span class="hook-text">Ini yang gue mau denger waktu gue di posisi lo sekarang.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini yang gue mau denger waktu gue di posisi lo sekarang.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">153</span>
+            <span class="hook-text">Lo nggak perlu punya semuanya — lo perlu mulai dari sesuatu.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo nggak perlu punya semuanya — lo perlu mulai dari sesuatu.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">154</span>
+            <span class="hook-text">Gue belajar ini dengan cara yang paling menyakitkan.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Gue belajar ini dengan cara yang paling menyakitkan.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">155</span>
+            <span class="hook-text">Ini yang bikin gue bangun tiap pagi — dan nggak menyerah.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini yang bikin gue bangun tiap pagi — dan nggak menyerah.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">156</span>
+            <span class="hook-text">Lo tau nggak rasanya di-reject berkali-kali? Gue tau.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo tau nggak rasanya di-reject berkali-kali? Gue tau.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">157</span>
+            <span class="hook-text">Gue nggak sempurna — dan itu OKE.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Gue nggak sempurna — dan itu OKE.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">158</span>
+            <span class="hook-text">Ini pelajaran yang gue dapetin dari kegagalan terbesar gue.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini pelajaran yang gue dapetin dari kegagalan terbesar gue.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">159</span>
+            <span class="hook-text">Lo nggak perlu bandingin diri lo sama orang lain.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo nggak perlu bandingin diri lo sama orang lain.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">160</span>
+            <span class="hook-text">Gue pernah di titik terendah — ini yang gue lakuin untuk bangkit.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Gue pernah di titik terendah — ini yang gue lakuin untuk bangkit.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">161</span>
+            <span class="hook-text">Ini yang gue mau kasih tau ke lo yang lagi struggling sekarang.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini yang gue mau kasih tau ke lo yang lagi struggling sekarang.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">162</span>
+            <span class="hook-text">Lo lebih kuat dari yang lo kira — dan ini buktinya.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo lebih kuat dari yang lo kira — dan ini buktinya.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">163</span>
+            <span class="hook-text">Gue nggak tau ini bakal worth it — tapi ternyata iya.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Gue nggak tau ini bakal worth it — tapi ternyata iya.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">164</span>
+            <span class="hook-text">Ini yang terjadi kalau lo berani keluar dari zona nyaman.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini yang terjadi kalau lo berani keluar dari zona nyaman.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">165</span>
+            <span class="hook-text">Lo nggak perlu tau semuanya — lo perlu tau langkah selanjutnya.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo nggak perlu tau semuanya — lo perlu tau langkah selanjutnya.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">166</span>
+            <span class="hook-text">Gue berhenti ngebandingin diri gue — dan ini yang berubah.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Gue berhenti ngebandingin diri gue — dan ini yang berubah.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">167</span>
+            <span class="hook-text">Ini yang gue pelajarin dari orang yang gue paling hormati.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini yang gue pelajarin dari orang yang gue paling hormati.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">168</span>
+            <span class="hook-text">Lo tau nggak? Kegagalan itu bukan akhir — ini awal.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo tau nggak? Kegagalan itu bukan akhir — ini awal.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">169</span>
+            <span class="hook-text">Gue nggak punya mentor — gue punya kegagalan.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Gue nggak punya mentor — gue punya kegagalan.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">170</span>
+            <span class="hook-text">Ini yang bikin gue berbeda dari yang lain — gue nggak menyerah.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini yang bikin gue berbeda dari yang lain — gue nggak menyerah.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">171</span>
+            <span class="hook-text">Lo nggak perlu cepat — lo perlu konsisten.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo nggak perlu cepat — lo perlu konsisten.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">172</span>
+            <span class="hook-text">Gue pernah merasa nggak cukup — sampai gue sadar ini.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Gue pernah merasa nggak cukup — sampai gue sadar ini.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">173</span>
+            <span class="hook-text">Ini yang gue pelajarin setelah kehilangan sesuatu yang berharga.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini yang gue pelajarin setelah kehilangan sesuatu yang berharga.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">174</span>
+            <span class="hook-text">Lo nggak sendirian di perjalanan ini — kita sama-sama belajar.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo nggak sendirian di perjalanan ini — kita sama-sama belajar.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">175</span>
+            <span class="hook-text">Gue nggak tau ini bakal berhasil — tapi gue coba.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Gue nggak tau ini bakal berhasil — tapi gue coba.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">176</span>
+            <span class="hook-text">Ini yang bikin gue tetap humble di tengah kesuksesan.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini yang bikin gue tetap humble di tengah kesuksesan.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">177</span>
+            <span class="hook-text">Lo tau nggak? Hal terberat yang pernah gue lakuin adalah memulai.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo tau nggak? Hal terberat yang pernah gue lakuin adalah memulai.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">178</span>
+            <span class="hook-text">Gue berhenti takut — dan ini yang terjadi setelahnya.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Gue berhenti takut — dan ini yang terjadi setelahnya.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">179</span>
+            <span class="hook-text">Ini yang gue mau denger waktu gue 10 tahun lebih muda.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini yang gue mau denger waktu gue 10 tahun lebih muda.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">180</span>
+            <span class="hook-text">Lo sudah lebih berani dari yang lo kira.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo sudah lebih berani dari yang lo kira.')">📋 Copy</button>
+        </div>
+
+        </div>
     </div>
+
+    <div class="category-section" id="controversial">
+        <div class="category-header">
+            <span class="hook-count">30 hooks</span>
+            <h3>🔥 Controversial Hooks</h3>
+            <p>Pemicu debat — engagement meledak</p>
+        </div>
+        <div class="hooks-list">
+            <div class="hook-card">
+            <span class="hook-number">181</span>
+            <span class="hook-text">Unpopular opinion: Banyak hal populer itu overrated — dan ini alasannya.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Unpopular opinion: Banyak hal populer itu overrated — dan ini alasannya.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">182</span>
+            <span class="hook-text">Lo tau nggak? Hal yang umum dipercaya itu bohong.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo tau nggak? Hal yang umum dipercaya itu bohong.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">183</span>
+            <span class="hook-text">Gue berani bilang ini: Banyak hal nggak sebagus yang lo kira.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Gue berani bilang ini: Banyak hal nggak sebagus yang lo kira.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">184</span>
+            <span class="hook-text">Stop lakuin hal yang salah — ini kenapa itu sia-sia.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Stop lakuin hal yang salah — ini kenapa itu sia-sia.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">185</span>
+            <span class="hook-text">Ini yang orang nggak mau denger soal topik populer.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini yang orang nggak mau denger soal topik populer.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">186</span>
+            <span class="hook-text">Gue nggak setuju dengan opini populer — dan ini alasannya.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Gue nggak setuju dengan opini populer — dan ini alasannya.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">187</span>
+            <span class="hook-text">Lo tau nggak? Hal yang lo pikir membantu, justru merugikan.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo tau nggak? Hal yang lo pikir membantu, justru merugikan.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">188</span>
+            <span class="hook-text">Ini kontroversial — tapi gue harus bilang sejujurnya.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini kontroversial — tapi gue harus bilang sejujurnya.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">189</span>
+            <span class="hook-text">Kenapa gue stop banyak hal — dan kenapa lo harus pertimbangkan juga.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Kenapa gue stop banyak hal — dan kenapa lo harus pertimbangkan juga.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">190</span>
+            <span class="hook-text">Gue dibilang 'gila' karena bilang ini — tapi ini faktanya.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Gue dibilang \'gila\' karena bilang ini — tapi ini faktanya.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">191</span>
+            <span class="hook-text">Ini yang nggak orang berani bilang soal industri ini.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini yang nggak orang berani bilang soal industri ini.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">192</span>
+            <span class="hook-text">Lo tau nggak? Hal yang lo pikir 'gratis' — sebenernya lo yang dijual.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo tau nggak? Hal yang lo pikir \'gratis\' — sebenernya lo yang dijual.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">193</span>
+            <span class="hook-text">Gue challenge lo untuk bantah ini: Apakah lo berani?</span>
+            <button class="copy-btn" onclick="copyText(this, 'Gue challenge lo untuk bantah ini: Apakah lo berani?')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">194</span>
+            <span class="hook-text">Ini yang terjadi kalau lo berhenti ikut-ikutan tren.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini yang terjadi kalau lo berhenti ikut-ikutan tren.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">195</span>
+            <span class="hook-text">Lo nggak perlu banyak hal untuk sukses — dan ini buktinya.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo nggak perlu banyak hal untuk sukses — dan ini buktinya.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">196</span>
+            <span class="hook-text">Gue bilang ini karena peduli: Banyak arah yang salah.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Gue bilang ini karena peduli: Banyak arah yang salah.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">197</span>
+            <span class="hook-text">Ini yang industri besar nggak mau lo tau.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini yang industri besar nggak mau lo tau.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">198</span>
+            <span class="hook-text">Stop percaya mitos ini — ini kenapa itu salah.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Stop percaya mitos ini — ini kenapa itu salah.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">199</span>
+            <span class="hook-text">Gue tau ini nggak populer — tapi ini fakta.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Gue tau ini nggak populer — tapi ini fakta.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">200</span>
+            <span class="hook-text">Lo tau nggak? Hal yang lo lakuin tiap hari itu bikin lo gagal.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo tau nggak? Hal yang lo lakuin tiap hari itu bikin lo gagal.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">201</span>
+            <span class="hook-text">Ini yang bedain opini gue dari yang lain — gue punya data.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini yang bedain opini gue dari yang lain — gue punya data.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">202</span>
+            <span class="hook-text">Gue nggak takut bilang: Banyak yang salah.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Gue nggak takut bilang: Banyak yang salah.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">203</span>
+            <span class="hook-text">Lo bakal hate gue karena ini — tapi ini kebenaran.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo bakal hate gue karena ini — tapi ini kebenaran.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">204</span>
+            <span class="hook-text">Ini yang nggak ada orang yang berani bilang ke lo.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini yang nggak ada orang yang berani bilang ke lo.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">205</span>
+            <span class="hook-text">Gue dulu juga percaya mitos — sampai gue liat ini.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Gue dulu juga percaya mitos — sampai gue liat ini.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">206</span>
+            <span class="hook-text">Lo tau nggak? Hal yang lo pikir 'investasi' — sebenernya buang uang.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo tau nggak? Hal yang lo pikir \'investasi\' — sebenernya buang uang.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">207</span>
+            <span class="hook-text">Ini yang terjadi kalau lo berhenti ikut standar orang lain.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini yang terjadi kalau lo berhenti ikut standar orang lain.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">208</span>
+            <span class="hook-text">Gue nggak peduli apa kata orang — kebenaran itu penting.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Gue nggak peduli apa kata orang — kebenaran itu penting.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">209</span>
+            <span class="hook-text">Lo bisa setuju atau nggak — tapi ini yang gue liat di lapangan.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo bisa setuju atau nggak — tapi ini yang gue liat di lapangan.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">210</span>
+            <span class="hook-text">Ini yang bikin gue 'dibenci' — dan gue OKE dengan itu.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini yang bikin gue \'dibenci\' — dan gue OKE dengan itu.')">📋 Copy</button>
+        </div>
+
+        </div>
+    </div>
+
+    <div class="category-section" id="edukasi">
+        <div class="category-header">
+            <span class="hook-count">40 hooks</span>
+            <h3>📚 Edukasi Hooks</h3>
+            <p>Trik & tips — bikin kagum</p>
+        </div>
+        <div class="hooks-list">
+            <div class="hook-card">
+            <span class="hook-number">211</span>
+            <span class="hook-text">Ini trik yang gue pelajarin setelah 5 tahun — dalam 60 detik.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini trik yang gue pelajarin setelah 5 tahun — dalam 60 detik.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">212</span>
+            <span class="hook-text">Lo tau nggak cara yang 10x lebih cepat? Ini caranya.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo tau nggak cara yang 10x lebih cepat? Ini caranya.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">213</span>
+            <span class="hook-text">3 hal yang harus lo tau sebelum terlambat.</span>
+            <button class="copy-btn" onclick="copyText(this, '3 hal yang harus lo tau sebelum terlambat.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">214</span>
+            <span class="hook-text">Ini yang gue pelajarin dari sumber terpercaya — dan ini game-changer.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini yang gue pelajarin dari sumber terpercaya — dan ini game-changer.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">215</span>
+            <span class="hook-text">Lo lakuin ini tiap hari? Ini cara yang lebih bener.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo lakuin ini tiap hari? Ini cara yang lebih bener.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">216</span>
+            <span class="hook-text">Ini 5 tools yang bikin gue hemat waktu 2 jam per hari.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini 5 tools yang bikin gue hemat waktu 2 jam per hari.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">217</span>
+            <span class="hook-text">Lo tau nggak? Fakta mengejutkan tentang hal ini — dan ini aplikasinya.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo tau nggak? Fakta mengejutkan tentang hal ini — dan ini aplikasinya.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">218</span>
+            <span class="hook-text">Ini framework yang gue pakai untuk banyak hal — dan ini hasilnya.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini framework yang gue pakai untuk banyak hal — dan ini hasilnya.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">219</span>
+            <span class="hook-text">Satu hal yang bedain yang berhasil dan yang gagal.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Satu hal yang bedain yang berhasil dan yang gagal.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">220</span>
+            <span class="hook-text">Lo nggak tau soal ini? Ini penjelasan dalam 30 detik.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo nggak tau soal ini? Ini penjelasan dalam 30 detik.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">221</span>
+            <span class="hook-text">Ini yang terjadi kalau lo apply teori ini dalam kehidupan nyata.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini yang terjadi kalau lo apply teori ini dalam kehidupan nyata.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">222</span>
+            <span class="hook-text">3 kesalahan fatal yang lo lakuin tanpa lo sadar.</span>
+            <button class="copy-btn" onclick="copyText(this, '3 kesalahan fatal yang lo lakuin tanpa lo sadar.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">223</span>
+            <span class="hook-text">Ini cara profesional lakuin hal ini — dan lo bisa tiruin.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini cara profesional lakuin hal ini — dan lo bisa tiruin.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">224</span>
+            <span class="hook-text">Lo tau nggak? Yang lo pikir susah, sebenernya ada shortcut-nya.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo tau nggak? Yang lo pikir susah, sebenernya ada shortcut-nya.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">225</span>
+            <span class="hook-text">Ini yang gue pelajarin setelah bertahun-tahun di industri ini.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini yang gue pelajarin setelah bertahun-tahun di industri ini.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">226</span>
+            <span class="hook-text">5 tanda bahwa lo di jalur yang benar — dan yang nomor 5 paling penting.</span>
+            <button class="copy-btn" onclick="copyText(this, '5 tanda bahwa lo di jalur yang benar — dan yang nomor 5 paling penting.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">227</span>
+            <span class="hook-text">Ini cara gue solve masalah ini dalam setengah waktu — tanpa kualitas turun.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini cara gue solve masalah ini dalam setengah waktu — tanpa kualitas turun.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">228</span>
+            <span class="hook-text">Lo lakuin ini tiap hari? Berhenti — ini cara yang lebih bener.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo lakuin ini tiap hari? Berhenti — ini cara yang lebih bener.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">229</span>
+            <span class="hook-text">Ini yang nggak diajarin di sekolah soal hal ini.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini yang nggak diajarin di sekolah soal hal ini.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">230</span>
+            <span class="hook-text">3 tools gratis yang menggantikan software mahal.</span>
+            <button class="copy-btn" onclick="copyText(this, '3 tools gratis yang menggantikan software mahal.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">231</span>
+            <span class="hook-text">Ini pola yang gue temuin dari pengalaman — dan ini bisa lo pakai juga.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini pola yang gue temuin dari pengalaman — dan ini bisa lo pakai juga.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">232</span>
+            <span class="hook-text">Lo tau nggak cara yang bikin gue kaget sendiri?</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo tau nggak cara yang bikin gue kaget sendiri?')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">233</span>
+            <span class="hook-text">Ini yang harus lo tau soal hal ini di tahun ini.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini yang harus lo tau soal hal ini di tahun ini.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">234</span>
+            <span class="hook-text">Satu perubahan kecil yang bikin hasil jadi 10x lebih efektif.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Satu perubahan kecil yang bikin hasil jadi 10x lebih efektif.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">235</span>
+            <span class="hook-text">Ini yang gue mau tau 5 tahun lalu tentang hal ini.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini yang gue mau tau 5 tahun lalu tentang hal ini.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">236</span>
+            <span class="hook-text">Lo nggak perlu mahir banyak hal — lo perlu tau ini.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo nggak perlu mahir banyak hal — lo perlu tau ini.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">237</span>
+            <span class="hook-text">Ini 3 langkah gue dari nol sampai hasil nyata.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini 3 langkah gue dari nol sampai hasil nyata.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">238</span>
+            <span class="hook-text">Lo tau nggak? Yang lo pikir 'ribet' sebenernya ada cara instan-nya.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo tau nggak? Yang lo pikir \'ribet\' sebenernya ada cara instan-nya.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">239</span>
+            <span class="hook-text">Ini yang bikin banyak hal beda — dan kenapa lo harus mulai sekarang.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini yang bikin banyak hal beda — dan kenapa lo harus mulai sekarang.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">240</span>
+            <span class="hook-text">5 fakta yang bikin gue berpikir ulang.</span>
+            <button class="copy-btn" onclick="copyText(this, '5 fakta yang bikin gue berpikir ulang.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">241</span>
+            <span class="hook-text">Ini cara gue solve masalah ini — dan ini bisa lo pakai juga.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini cara gue solve masalah ini — dan ini bisa lo pakai juga.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">242</span>
+            <span class="hook-text">Lo lakuin ini? Ini yang lo lewatkan.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo lakuin ini? Ini yang lo lewatkan.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">243</span>
+            <span class="hook-text">Ini yang gue pelajarin dari sumber terpercaya soal hal ini.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini yang gue pelajarin dari sumber terpercaya soal hal ini.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">244</span>
+            <span class="hook-text">3 hal yang harus lo stop lakuin sekarang.</span>
+            <button class="copy-btn" onclick="copyText(this, '3 hal yang harus lo stop lakuin sekarang.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">245</span>
+            <span class="hook-text">Ini yang terjadi kalau lo konsisten selama 30 hari.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini yang terjadi kalau lo konsisten selama 30 hari.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">246</span>
+            <span class="hook-text">Lo tau nggak? Banyak hal punya trik yang nggak orang banyak tau.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo tau nggak? Banyak hal punya trik yang nggak orang banyak tau.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">247</span>
+            <span class="hook-text">Ini framework yang dipake orang sukses — dijelasin simpel.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini framework yang dipake orang sukses — dijelasin simpel.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">248</span>
+            <span class="hook-text">Lo nggak butuh banyak hal — lo butuh fokus.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo nggak butuh banyak hal — lo butuh fokus.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">249</span>
+            <span class="hook-text">Ini yang gue pelajarin setelah gagal berkali-kali soal hal ini.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini yang gue pelajarin setelah gagal berkali-kali soal hal ini.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">250</span>
+            <span class="hook-text">Satu tips yang bakal ubah cara lo selamanya.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Satu tips yang bakal ubah cara lo selamanya.')">📋 Copy</button>
+        </div>
+
+        </div>
+    </div>
+
+    <div class="category-section" id="story">
+        <div class="category-header">
+            <span class="hook-count">30 hooks</span>
+            <h3>🎬 Story Hooks</h3>
+            <p>Storytelling — bikin nempel</p>
+        </div>
+        <div class="hooks-list">
+            <div class="hook-card">
+            <span class="hook-number">251</span>
+            <span class="hook-text">Ini cerita gue dari nol sampai sukses — dan ini bukan keberuntungan.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini cerita gue dari nol sampai sukses — dan ini bukan keberuntungan.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">252</span>
+            <span class="hook-text">Gue nggak pernah cerita ini ke siapapun — tapi sekarang gue ready.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Gue nggak pernah cerita ini ke siapapun — tapi sekarang gue ready.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">253</span>
+            <span class="hook-text">3 tahun lalu gue di posisi lo sekarang — ini yang gue pelajarin.</span>
+            <button class="copy-btn" onclick="copyText(this, '3 tahun lalu gue di posisi lo sekarang — ini yang gue pelajarin.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">254</span>
+            <span class="hook-text">Ini yang terjadi kalau lo berani ambil risiko yang gue ambil.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini yang terjadi kalau lo berani ambil risiko yang gue ambil.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">255</span>
+            <span class="hook-text">Gue hampir menyerah hari itu — tapi sesuatu terjadi.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Gue hampir menyerah hari itu — tapi sesuatu terjadi.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">256</span>
+            <span class="hook-text">Ini cerita yang bikin gue berubah total — dan mungkin bisa ubah lo juga.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini cerita yang bikin gue berubah total — dan mungkin bisa ubah lo juga.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">257</span>
+            <span class="hook-text">Lo tau nggak rasanya di titik terendah? Gue tau — ini cerita gue.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo tau nggak rasanya di titik terendah? Gue tau — ini cerita gue.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">258</span>
+            <span class="hook-text">Ini yang gue lakuin setelah kejadian buruk — dan ini hasilnya.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini yang gue lakuin setelah kejadian buruk — dan ini hasilnya.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">259</span>
+            <span class="hook-text">Gue dulu orang yang paling nggak mungkin sukses — sekarang bukti nyata.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Gue dulu orang yang paling nggak mungkin sukses — sekarang bukti nyata.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">260</span>
+            <span class="hook-text">Ini momen yang bikin gue sadar — gue harus berubah.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini momen yang bikin gue sadar — gue harus berubah.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">261</span>
+            <span class="hook-text">Gue inget banget hari itu — ini yang terjadi.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Gue inget banget hari itu — ini yang terjadi.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">262</span>
+            <span class="hook-text">Ini cerita yang nggak gue banggain — tapi ini yang bikin gue kuat.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini cerita yang nggak gue banggain — tapi ini yang bikin gue kuat.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">263</span>
+            <span class="hook-text">Lo tau kenapa gue mulai perjalanan ini? Ini ceritanya.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo tau kenapa gue mulai perjalanan ini? Ini ceritanya.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">264</span>
+            <span class="hook-text">Ini yang terjadi kalau lo terus jalan meski nggak ada yang percaya.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini yang terjadi kalau lo terus jalan meski nggak ada yang percaya.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">265</span>
+            <span class="hook-text">Gue di titik terendah — ini yang gue lakuin selanjutnya.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Gue di titik terendah — ini yang gue lakuin selanjutnya.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">266</span>
+            <span class="hook-text">Ini cerita dari orang yang hampir menyerah — tapi nggak.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini cerita dari orang yang hampir menyerah — tapi nggak.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">267</span>
+            <span class="hook-text">Gue nggak tau ini bakal jadi cerita sukses — waktu itu cuma coba-coba.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Gue nggak tau ini bakal jadi cerita sukses — waktu itu cuma coba-coba.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">268</span>
+            <span class="hook-text">Ini yang gue pelajarin dari kejadian yang hampir menghancurkan gue.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini yang gue pelajarin dari kejadian yang hampir menghancurkan gue.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">269</span>
+            <span class="hook-text">Lo pernah ngerasain hal ini? Ini yang terjadi sama gue.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo pernah ngerasain hal ini? Ini yang terjadi sama gue.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">270</span>
+            <span class="hook-text">Ini cerita yang bikin gue nangis — dan sekarang gue tersenyum.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini cerita yang bikin gue nangis — dan sekarang gue tersenyum.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">271</span>
+            <span class="hook-text">Gue berhenti dengerin orang lain — dan ini yang terjadi.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Gue berhenti dengerin orang lain — dan ini yang terjadi.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">272</span>
+            <span class="hook-text">Ini yang gue lakuin setelah sembilang 'gagal'.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini yang gue lakuin setelah sembilang \'gagal\'.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">273</span>
+            <span class="hook-text">Gue nggak punya koneksi, nggak punya modal — ini yang gue punya.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Gue nggak punya koneksi, nggak punya modal — ini yang gue punya.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">274</span>
+            <span class="hook-text">Ini cerita yang mungkin mirip dengan cerita lo.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini cerita yang mungkin mirip dengan cerita lo.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">275</span>
+            <span class="hook-text">Gue pernah di posisi lo — dan ini yang bantu gue keluar.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Gue pernah di posisi lo — dan ini yang bantu gue keluar.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">276</span>
+            <span class="hook-text">Ini yang terjadi kalau lo berani mulai meski nggak siap.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini yang terjadi kalau lo berani mulai meski nggak siap.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">277</span>
+            <span class="hook-text">Gue belajar ini dengan cara yang paling menyakitkan — ini ceritanya.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Gue belajar ini dengan cara yang paling menyakitkan — ini ceritanya.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">278</span>
+            <span class="hook-text">Ini momen yang bikin gue berhenti mikirin apa kata orang.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini momen yang bikin gue berhenti mikirin apa kata orang.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">279</span>
+            <span class="hook-text">Lo tau rasanya di posisi ini? Gue juga — ini yang gue lakuin.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo tau rasanya di posisi ini? Gue juga — ini yang gue lakuin.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">280</span>
+            <span class="hook-text">Ini cerita gue — dan ini mungkin awal dari cerita lo.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini cerita gue — dan ini mungkin awal dari cerita lo.')">📋 Copy</button>
+        </div>
+
+        </div>
+    </div>
+
+    <div class="category-section" id="urgency">
+        <div class="category-header">
+            <span class="hook-count">20 hooks</span>
+            <h3>⏰ Urgency & FOMO Hooks</h3>
+            <p>Bikin ketinggalan kalau nggak nonton</p>
+        </div>
+        <div class="hooks-list">
+            <div class="hook-card">
+            <span class="hook-number">281</span>
+            <span class="hook-text">Ini info yang bakal expired sebentar lagi — simpen baik-baik.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini info yang bakal expired sebentar lagi — simpen baik-baik.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">282</span>
+            <span class="hook-text">Lo bakal menyesal kalau nggak tau ini sebelum terlambat.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo bakal menyesal kalau nggak tau ini sebelum terlambat.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">283</span>
+            <span class="hook-text">Ini yang bakal berubah di waktu dekat — dan lo harus siap.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini yang bakal berubah di waktu dekat — dan lo harus siap.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">284</span>
+            <span class="hook-text">Jangan scroll dulu — ini penting banget untuk lo.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Jangan scroll dulu — ini penting banget untuk lo.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">285</span>
+            <span class="hook-text">Ini yang nggak bakal orang lain kasih tau lo.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini yang nggak bakal orang lain kasih tau lo.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">286</span>
+            <span class="hook-text">Lo punya 10 detik? Ini yang harus lo tau.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo punya 10 detik? Ini yang harus lo tau.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">287</span>
+            <span class="hook-text">Ini yang bakal trending minggu depan — lo harus tau sekarang.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini yang bakal trending minggu depan — lo harus tau sekarang.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">288</span>
+            <span class="hook-text">Jangan skip ini — ini yang bikin beda.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Jangan skip ini — ini yang bikin beda.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">289</span>
+            <span class="hook-text">Ini yang terjadi kalau lo nggak mulai hari ini.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini yang terjadi kalau lo nggak mulai hari ini.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">290</span>
+            <span class="hook-text">Lo bakal ketinggalan kalau nggak nonton ini sampai habis.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo bakal ketinggalan kalau nggak nonton ini sampai habis.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">291</span>
+            <span class="hook-text">Ini yang harus lo tau SEBELUM hari ini berakhir.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini yang harus lo tau SEBELUM hari ini berakhir.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">292</span>
+            <span class="hook-text">Jangan save dulu — baca ini dulu.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Jangan save dulu — baca ini dulu.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">293</span>
+            <span class="hook-text">Ini yang bakal naik daun — dan lo harus tau sekarang.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini yang bakal naik daun — dan lo harus tau sekarang.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">294</span>
+            <span class="hook-text">Lo nggak mau ketinggalan ini — trust me.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo nggak mau ketinggalan ini — trust me.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">295</span>
+            <span class="hook-text">Ini yang bakal game-changer buat lo di waktu dekat.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini yang bakal game-changer buat lo di waktu dekat.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">296</span>
+            <span class="hook-text">Jangan tunggu sampai terlambat — ini yang harus lo lakuin sekarang.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Jangan tunggu sampai terlambat — ini yang harus lo lakuin sekarang.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">297</span>
+            <span class="hook-text">Ini yang orang cari tapi nggak tau harus mulai dari mana.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini yang orang cari tapi nggak tau harus mulai dari mana.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">298</span>
+            <span class="hook-text">Lo bakal beri thanks ke gue setelah baca ini.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Lo bakal beri thanks ke gue setelah baca ini.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">299</span>
+            <span class="hook-text">Ini yang bikin lo satu langkah lebih depan dari yang lain.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Ini yang bikin lo satu langkah lebih depan dari yang lain.')">📋 Copy</button>
+        </div>
+<div class="hook-card">
+            <span class="hook-number">300</span>
+            <span class="hook-text">Jangan lewatkan ini — ini yang bikin beda antara yang berhasil dan yang nggak.</span>
+            <button class="copy-btn" onclick="copyText(this, 'Jangan lewatkan ini — ini yang bikin beda antara yang berhasil dan yang nggak.')">📋 Copy</button>
+        </div>
+
+        </div>
+    </div>
+
 </section>
-
-<footer>
-    <p>🎯 Viral Hook Vault © 2026 | Selamat bikin konten viral! 🚀</p>
-
-
-<script>
-// ===== DATA: ALL 300+ HOOKS =====
-const hooksData = {
-    curiosity: [
-        { num: 1, text: "Ini yang nggak pernah diajarin siapapun soal uang...", tag: "uang/keuangan" },
-        { num: 2, text: "Ternyata cara kita masak nasi selama ini SALAH.", tag: "fakta/kejutan" },
-        { num: 3, text: "Ada satu aplikasi yang dipake 10 juta orang tapi kamu belum tau.", tag: "aplikasi/rekomendasi" },
-        { num: 4, text: "Gue nemu cara dapetin hasil terbaik dalam 30 menit — dan ini nyata.", tag: "productivity" },
-        { num: 5, text: "Kenapa orang kaya selalu bilang ini soal keuangan?", tag: "uang/motivasi" },
-        { num: 6, text: "Ini alasan kenapa konten lo sepi — dan lo nggak sadar.", tag: "konten/sosmed" },
-        { num: 7, text: "Satu hal yang bedain orang sukses dan orang biasa...", tag: "mindset" },
-        { num: 8, text: "Lo tau nggak kenapa banyak hal tiba-tiba viral? Ini rahasianya.", tag: "viral/algoritma" },
-        { num: 9, text: "Gue coba ini selama 7 hari dan hasilnya bikin gue kaget.", tag: "challenge/transformasi" },
-        { num: 10, text: "Ini yang terjadi kalau lo bangun jam 3 pagi selama 30 hari.", tag: "kebiasaan/productivity" },
-        { num: 11, text: "Ternyata produk mahal punya versi Rp 0 — ini caranya.", tag: "tips/hemat" },
-        { num: 12, text: "Kenapa 90% orang gagal di bisnis online? Ini jawabannya.", tag: "bisnis/online" },
-        { num: 13, text: "Gue baru tau soal ini minggu lalu dan gue nggak bisa tidur.", tag: "fakta/kejutan" },
-        { num: 14, text: "Ini trik yang dipake content creator tapi nggak pernah di-share.", tag: "konten/tips" },
-        { num: 15, text: "Kalau lo lakuin ini tiap hari, hidup lo bakal berubah drastis.", tag: "kebiasaan/transformasi" },
-        { num: 16, text: "Ternyata banyak hal umum itu bohong besar — ini buktinya.", tag: "fakta/kejutan" },
-        { num: 17, text: "Lo lagi dibohongi soal banyak hal — dan ini faktanya.", tag: "fakta/kejutan" },
-        { num: 18, text: "Ini yang bakal terjadi di waktu dekat kalau lo nggak mulai sekarang.", tag: "urgency/future" },
-        { num: 19, text: "Gue riset 100 konten viral dan nemu pola ini...", tag: "konten/riset" },
-        { num: 20, text: "Satu kata yang bisa ubah seluruh bisnis lo.", tag: "bisnis/mindset" },
-        { num: 21, text: "Kenapa lo nggak pernah dengar soal ini? Ini penjelasannya.", tag: "fakta/edukasi" },
-        { num: 22, text: "Ini rahasia yang dipendam industri besar dari kita.", tag: "industri/rahasia" },
-        { num: 23, text: "Lo tau nggak? Fakta mengejutkan ini — dan ini dampaknya.", tag: "fakta/dampak" },
-        { num: 24, text: "Gue test 10 cara berbeda dan cuma 1 yang beneran kerja.", tag: "test/ranking" },
-        { num: 25, text: "Ini yang terjadi kalau lo stop kebiasaan umum selama 30 hari.", tag: "kebiasaan/challenge" },
-        { num: 26, text: "Ternyata orang terkenal pakai trik ini — dan ini bukan rahasia.", tag: "tips/trik" },
-        { num: 27, text: "Kenapa hal yang lo percaya selama ini itu salah?", tag: "mitos/fakta" },
-        { num: 28, text: "Ini satu hal yang gue berani taruhin semua uang gue.", tag: "investasi/keyakinan" },
-        { num: 29, text: "Lo bakal nggak percaya kalau tau berapa banyak yang lo buang.", tag: "uang/hemat" },
-        { num: 30, text: "Gue nemu pola ini setelah nonton 500+ konten viral.", tag: "konten/riset" },
-        { num: 31, text: "Ini yang bikin konten creator terkenal selalu tembus 10 juta views.", tag: "konten/viral" },
-        { num: 32, text: "Ternyata ada cara yang 10x lebih cepat — dan gratis.", tag: "tips/efisiensi" },
-        { num: 33, text: "Kenapa lo masih lakuin cara lama kalau ada cara yang lebih gampang?", tag: "tips/perubahan" },
-        { num: 34, text: "Ini yang gue pelajarin setelah gagal 5 kali di bisnis online.", tag: "bisnis/lesson" },
-        { num: 35, text: "Lo tau kenapa sesuatu viral? Bukan karena kontennya — tapi karena INI.", tag: "viral/rahasia" },
-        { num: 36, text: "Satu perubahan kecil yang bikin engagement gue naik 300%.", tag: "konten/engagement" },
-        { num: 37, text: "Ini yang nggak orang bilang soal topik populer.", tag: "fakta/opini" },
-        { num: 38, text: "Gue coba semua metode populer — ini ranking-nya dari terburuk ke terbaik.", tag: "ranking/review" },
-        { num: 39, text: "Kenapa sesuatu yang lo pikir benar, justru bikin lo gagal?", tag: "mindset/gagal" },
-        { num: 40, text: "Ini fakta tentang sesuatu yang bikin gue merinding.", tag: "fakta/kejutan" },
-        { num: 41, text: "Lo lagi kehilangan sesuatu setiap hari tanpa lo sadar.", tag: "uang/waktu" },
-        { num: 42, text: "Ternyata hal sederhana ini adalah kunci dari semua konten viral.", tag: "konten/kunci" },
-        { num: 43, text: "Ini yang terjadi kalau lo apply teori ini selama 1 minggu.", tag: "teori/praktik" },
-        { num: 44, text: "Gue nggak percaya sampai gue buktiin sendiri — dan ini hasilnya.", tag: "bukti/hasil" },
-        { num: 45, text: "Kenapa 99% tutorial di internet itu salah?", tag: "tutorial/mitos" },
-        { num: 46, text: "Ini satu hal yang selalu ada di konten yang tembus 1 juta views.", tag: "konten/pola" },
-        { num: 47, text: "Lo bakal menyesal kalau nggak tau ini 5 tahun lalu.", tag: "tips/penyesalan" },
-        { num: 48, text: "Ternyata yang kita pikir susah, sebenernya gampang banget.", tag: "tips/mudah" },
-        { num: 49, text: "Ini pola yang gue temuin dari 200+ konten viral di 2024.", tag: "konten/riset" },
-        { num: 50, text: "Satu hal yang gue berani jamin bakal ubah cara lo bikin konten.", tag: "konten/tips" }
-    ],
-    shock: [
-        { num: 51, text: "Gue bayar Rp 500 ribu untuk course ini — dan ini yang gue dapetin.", tag: "review/course" },
-        { num: 52, text: "Lo tau nggak? Gue bisa dapetin 1 juta views dengan konten 15 detik.", tag: "konten/viral" },
-        { num: 53, text: "Ini yang terjadi kalau lo post konten setiap hari selama 365 hari.", tag: "konten/konsisten" },
-        { num: 54, text: "Gue dari nol sampai 100K followers dalam 3 bulan — ini caranya.", tag: "growth/followers" },
-        { num: 55, text: "Lo nggak perlu modal jutaan untuk mulai bisnis — ini buktinya.", tag: "bisnis/modal" },
-        { num: 56, text: "Gue quit job gue setelah dapetin Rp 10 juta dari konten.", tag: "penghasilan/karir" },
-        { num: 57, text: "Ini yang nggak orang bilang soal jadi content creator.", tag: "konten/realita" },
-        { num: 58, text: "Gue bikin konten dari kamar kos — sekarang penghasilan gue berlipat.", tag: "konten/inspirasi" },
-        { num: 59, text: "Lo bisa dapetin hasil terbaik tanpa pengalaman, tanpa modal, tanpa koneksi.", tag: "motivasi/ulai" },
-        { num: 60, text: "Ini kebenaran soal industri yang bikin gue marah.", tag: "industri/kritik" },
-        { num: 61, text: "Gue test ini selama 90 hari — hasilnya nggak masuk akal.", tag: "test/hasil" },
-        { num: 62, text: "Lo tau berapa banyak uang yang lo buang karena hal sepele?", tag: "uang/hemat" },
-        { num: 63, text: "Ini yang terjadi kalau lo konsisten 1 tahun di satu platform.", tag: "konten/konsisten" },
-        { num: 64, text: "Gue nggak punya pengalaman — tapi gue dapetin hasil dalam 30 hari.", tag: "motivasi/hasil" },
-        { num: 65, text: "Ini fakta yang bikin gue nggak bisa tidur semalam.", tag: "fakta/kejutan" },
-        { num: 66, text: "Lo lagi dibohongi — dan ini bukti konkretnya.", tag: "fakta/bukti" },
-        { num: 67, text: "Gue coba hal yang katanya 'nggak mungkin' — dan ini yang terjadi.", tag: "challenge/hasil" },
-        { num: 68, text: "Ini yang bakal terjadi kalau lo nggak berubah mulai hari ini.", tag: "urgency/perubahan" },
-        { num: 69, text: "Gue habisin Rp 10 juta untuk ini — ini pelajaran yang gue dapetin.", tag: "uang/pelajaran" },
-        { num: 70, text: "Lo nggak butuh followers banyak — lo butuh INI.", tag: "konten/strategi" },
-        { num: 71, text: "Ini yang gue pelajarin dari orang yang penghasilannya 10x lipat gue.", tag: "uang/belajar" },
-        { num: 72, text: "Gue gagal 3 kali sebelum akhirnya nemu cara yang bener.", tag: "gagal/persistence" },
-        { num: 73, text: "Lo tau nggak kenapa yang lo lakuin tiap hari itu sia-sia?", tag: "kebiasaan/efisiensi" },
-        { num: 74, text: "Ini yang terjadi kalau lo ikutin cara 'resmi' vs cara yang beneran kerja.", tag: "perbandingan/tips" },
-        { num: 75, text: "Gue nyangka ini scam — ternyata ini hal terbaik yang pernah gue coba.", tag: "review/kejutan" },
-        { num: 76, text: "Lo bakal kaget tau berapa banyak yang bisa lo dapetin.", tag: "uang/potensi" },
-        { num: 77, text: "Ini yang nggak diajarin di sekolah soal uang.", tag: "uang/edukasi" },
-        { num: 78, text: "Gue dari minus Rp 5 juta sampai positif — ini timeline-nya.", tag: "uang/recover" },
-        { num: 79, text: "Lo nggak perlu jago editing — lo perlu ini.", tag: "konten/tips" },
-        { num: 80, text: "Ini yang bikin konten gue naik dari 100 views ke 1 juta views.", tag: "konten/growth" },
-        { num: 81, text: "Gue nggak percaya sampai gue liat sendiri — dan ini nyata.", tag: "bukti/kejutan" },
-        { num: 82, text: "Lo tau nggak? Fakta mengejutkan ini — dan ini bikin gue berpikir ulang.", tag: "fakta/mikir" },
-        { num: 83, text: "Ini yang terjadi kalau lo stop nonton ini di tengah jalan.", tag: "urgency/fomo" },
-        { num: 84, text: "Gue bayar mahal untuk tau ini — sekarang gue kasih gratis.", tag: "tips/nilai" },
-        { num: 85, text: "Lo nggak butuh izin siapapun untuk mulai.", tag: "motivasi/ulai" },
-        { num: 86, text: "Ini yang gue berani taruhin nama gue — karena ini 100% nyata.", tag: "janji/bukti" },
-        { num: 87, text: "Gue test semua — dan cuma ini yang beneran hasilnya instant.", tag: "test/terbaik" },
-        { num: 88, text: "Lo bakal nyesal kalau nggak mulai hari ini.", tag: "urgency/penyesalan" },
-        { num: 89, text: "Ini yang bedain orang yang 'coba' dan orang yang 'beneran'.", tag: "mindset/komitmen" },
-        { num: 90, text: "Gue nggak pernah menyangka ini bisa terjadi — sampai ini terjadi.", tag: "inspirasi/kejutan" },
-        { num: 91, text: "Lo tau kenapa banyak orang gagal? Karena mereka nggak tau ini.", tag: "gagal/rahasia" },
-        { num: 92, text: "Ini yang gue pelajarin setelah kehilangan segalanya.", tag: "lesson/kehilangan" },
-        { num: 93, text: "Gue dari zero hero — dan ini bukan keberuntungan.", tag: "inspirasi/kerja-kerja" },
-        { num: 94, text: "Lo nggak perlu sempurna — lo perlu mulai.", tag: "motivasi/ulai" },
-        { num: 95, text: "Ini yang terjadi kalau lo commit 30 hari ke satu hal.", tag: "challenge/komitmen" },
-        { num: 96, text: "Gue nggak dibayar untuk ngomong ini — gue ngomong karena ini penting.", tag: "jujur/penting" },
-        { num: 97, text: "Lo bakal kaget — ini lebih gampang dari yang lo kira.", tag: "tips/mudah" },
-        { num: 98, text: "Ini yang nggak orang mau dengar — tapi perlu didenger.", tag: "kebenaran/hard-truth" },
-        { num: 99, text: "Gue buktiin sendiri — dan sekarang gue kasih tau lo.", tag: "bukti/personal" },
-        { num: 100, text: "Lo bisa ignore ini — tapi lo bakal menyesal.", tag: "urgency/warning" }
-    ],
-    money: [
-        { num: 101, text: "Cara gue dapetin penghasilan pertama dari internet — modal HP doang.", tag: "penghasilan/online" },
-        { num: 102, text: "Lo tau nggak? Ada orang yang dapetin Rp 50 juta sebulan dari digital.", tag: "penghasilan/inspirasi" },
-        { num: 103, text: "Ini 3 cara dapetin uang dari rumah yang beneran kerja di 2024.", tag: "penghasilan/remote" },
-        { num: 104, text: "Gue mulai dari nol — sekarang penghasilan gue berlipat per bulan.", tag: "penghasilan/growth" },
-        { num: 105, text: "Ini bisnis sampingan yang bisa lo mulai minggu depan.", tag: "bisnis/sampingan" },
-        { num: 106, text: "Lo nggak butuh modal gede — lo butuh strategi yang bener.", tag: "bisnis/strategi" },
-        { num: 107, text: "Cara gue naikin penghasilan 10x dalam 6 bulan.", tag: "penghasilan/growth" },
-        { num: 108, text: "Ini yang orang kaya lakuin dengan uangnya — dan orang biasa nggak.", tag: "uang/mindset" },
-        { num: 109, text: "Gue dapetin uang dari satu konten — ini cara-nya.", tag: "konten/monetize" },
-        { num: 110, text: "Lo tau nggak cara dapetin uang sambil tidur? Ini konsepnya.", tag: "pasif-income" },
-        { num: 111, text: "Ini 5 skill yang bisa langsung lo jual — bahkan tanpa pengalaman.", tag: "skill/freelance" },
-        { num: 112, text: "Gue quit job corporate — ini perbandingan penghasilan gue.", tag: "karir/penghasilan" },
-        { num: 113, text: "Cara dapetin penghasilan dollar dari Indonesia — tanpa keluar rumah.", tag: "penghasilan/dollar" },
-        { num: 114, text: "Ini yang gue pelajarin soal uang setelah baca 50 buku.", tag: "uang/belajar" },
-        { num: 115, text: "Lo bisa mulai bisnis dengan modal Rp 0 — ini caranya.", tag: "bisnis/modal-0" },
-        { num: 116, text: "Ini kesalahan soal uang yang bikin orang tetap miskin.", tag: "uang/mistake" },
-        { num: 117, text: "Gue dari gaji 3 juta sampai penghasilan 30 juta — ini journey-nya.", tag: "penghasilan/growth" },
-        { num: 118, text: "Lo tau nggak? Banyak hal bisa jadi mesin uang kalau lo tau caranya.", tag: "uang/potensi" },
-        { num: 119, text: "Ini formula gue untuk dapetin penghasilan pasif.", tag: "pasif-income" },
-        { num: 120, text: "Cara gue bangun sumber penghasilan dari 0 sampai 5 dalam 1 tahun.", tag: "penghasilan/diversifikasi" },
-        { num: 121, text: "Lo nggak perlu kaya — lo perlu ngerti cara kerja uang.", tag: "uang/edukasi" },
-        { num: 122, text: "Ini yang bedain orang yang 'cari uang' dan orang yang 'bangun aset'.", tag: "uang/aset" },
-        { num: 123, text: "Gue test 7 cara dapetin uang online — ini hasil jujur gue.", tag: "uang/test" },
-        { num: 124, text: "Lo tau nggak cara dapetin komisi 50% dari jualan orang lain?", tag: "affiliate/komisi" },
-        { num: 125, text: "Ini bisnis yang bisa lo jalanin sambil kerja kantoran.", tag: "bisnis/sampingan" },
-        { num: 126, text: "Cara gue dapetin first Rp 1 juta dari platform digital.", tag: "penghasilan/ulai" },
-        { num: 127, text: "Lo nggak butuh followers 100K — lo butuh 100 pembeli.", tag: "penghasilan/conversion" },
-        { num: 128, text: "Ini yang gue lakuin berbeda — dan ini hasilnya.", tag: "strategi/hasil" },
-        { num: 129, text: "Gue nggak punya product sendiri — tapi gue dapetin penghasilan tetap per bulan.", tag: "penghasilan/ tanpa-product" },
-        { num: 130, text: "Lo tau nggak? Orang yang dapetin banyak uang itu pakai strategi ini.", tag: "uang/strategi" },
-        { num: 131, text: "Ini cara dapetin uang dari skill yang lo punya sekarang.", tag: "skill/penghasilan" },
-        { num: 132, text: "Gue mulai dari nggak punya apa-apa — sekarang hasil nyata.", tag: "inspirasi/uang" },
-        { num: 133, text: "Lo bisa dapetin penghasilan tetap per bulan — dan ini bukan MLM.", tag: "penghasilan/legit" },
-        { num: 134, text: "Ini yang nggak orang bilang soal dapetin uang dari internet.", tag: "internet/realita" },
-        { num: 135, text: "Cara gue convert followers jadi pembeli — step by step.", tag: "conversion/sales" },
-        { num: 136, text: "Lo tau nggak? Satu konten bisa menghasilkan uang — ini caranya.", tag: "konten/monetize" },
-        { num: 137, text: "Ini 3 bisnis digital yang paling cocok untuk pemula di 2024.", tag: "bisnis/pemula" },
-        { num: 138, text: "Gue habisin waktu 6 bulan untuk nemu cara ini — dan ini hasilnya.", tag: "perjalanan/hasil" },
-        { num: 139, text: "Lo nggak perlu jago jualan — lo perlu jago bikin konten.", tag: "konten/sales" },
-        { num: 140, text: "Ini yang bakal ubah cara lo mikirin uang — selamanya.", tag: "uang/mindset" }
-    ],
-    emotional: [
-        { num: 141, text: "Gue nggak pernah cerita ini ke siapapun — sampai sekarang.", tag: "personal/vulnerabel" },
-        { num: 142, text: "Ini yang gue pelajarin setelah gagal total di depan umum.", tag: "gagal/pelajaran" },
-        { num: 143, text: "Lo tau nggak rasanya dibilang 'nggak bakal bisa' sama semua orang?", tag: "mindset/doubt" },
-        { num: 144, text: "Gue menangis tadi malem — dan ini alasannya.", tag: "personal/emosi" },
-        { num: 145, text: "Ini surat gue untuk diri gue 5 tahun lalu.", tag: "personal/reflect" },
-        { num: 146, text: "Lo nggak sendirian — gue juga pernah ngerasain ini.", tag: "relatable/support" },
-        { num: 147, text: "Ini yang terjadi kalau lo terus-terusan nggak percaya diri.", tag: "mindset/konsekuensi" },
-        { num: 148, text: "Gue hampir menyerah — tapi satu hal ini yang bikin gue bertahan.", tag: "persistence/alasan" },
-        { num: 149, text: "Lo tau nggak? Hal kecil ini yang bikin gue berubah total.", tag: "transformasi/kecil" },
-        { num: 150, text: "Ini momen yang bikin gue sadar — gue harus berubah.", tag: "realisasi/perubahan" },
-        { num: 151, text: "Gue nggak tau mau kemana — tapi gue tetep jalan.", tag: "mindset/perjalanan" },
-        { num: 152, text: "Ini yang gue mau denger waktu gue di posisi lo sekarang.", tag: "advice/support" },
-        { num: 153, text: "Lo nggak perlu punya semuanya — lo perlu mulai dari sesuatu.", tag: "motivasi/ulai" },
-        { num: 154, text: "Gue belajar ini dengan cara yang paling menyakitkan.", tag: "pelajaran/sakit" },
-        { num: 155, text: "Ini yang bikin gue bangun tiap pagi — dan nggak menyerah.", tag: "motivasi/pagi" },
-        { num: 156, text: "Lo tau nggak rasanya di-reject berkali-kali? Gue tau.", tag: "rejection/relatable" },
-        { num: 157, text: "Gue nggak sempurna — dan itu OKE.", tag: "self-acceptance" },
-        { num: 158, text: "Ini pelajaran yang gue dapetin dari kegagalan terbesar gue.", tag: "gagal/lesson" },
-        { num: 159, text: "Lo nggak perlu bandingin diri lo sama orang lain.", tag: "mindset/comparison" },
-        { num: 160, text: "Gue pernah di titik terendah — ini yang gue lakuin untuk bangkit.", tag: "bangkit/struggle" },
-        { num: 161, text: "Ini yang gue mau kasih tau ke lo yang lagi struggling sekarang.", tag: "support/struggling" },
-        { num: 162, text: "Lo lebih kuat dari yang lo kira — dan ini buktinya.", tag: "motivasi/kekuatan" },
-        { num: 163, text: "Gue nggak tau ini bakal worth it — tapi ternyata iya.", tag: "perjalanan/hasil" },
-        { num: 164, text: "Ini yang terjadi kalau lo berani keluar dari zona nyaman.", tag: "zone-nyaman/perubahan" },
-        { num: 165, text: "Lo nggak perlu tau semuanya — lo perlu tau langkah selanjutnya.", tag: "mindset/next-step" },
-        { num: 166, text: "Gue berhenti ngebandingin diri gue — dan ini yang berubah.", tag: "self-improvement" },
-        { num: 167, text: "Ini yang gue pelajarin dari orang yang gue paling hormati.", tag: "mentor/belajar" },
-        { num: 168, text: "Lo tau nggak? Kegagalan itu bukan akhir — ini awal.", tag: "gagal/awal" },
-        { num: 169, text: "Gue nggak punya mentor — gue punya kegagalan.", tag: "belajar/gagal" },
-        { num: 170, text: "Ini yang bikin gue berbeda dari yang lain — gue nggak menyerah.", tag: "persistence" },
-        { num: 171, text: "Lo nggak perlu cepat — lo perlu konsisten.", tag: "konsistensi/mindset" },
-        { num: 172, text: "Gue pernah merasa nggak cukup — sampai gue sadar ini.", tag: "self-worth" },
-        { num: 173, text: "Ini yang gue pelajarin setelah kehilangan sesuatu yang berharga.", tag: "kehilangan/pelajaran" },
-        { num: 174, text: "Lo nggak sendirian di perjalanan ini — kita sama-sama belajar.", tag: "community/support" },
-        { num: 175, text: "Gue nggak tau ini bakal berhasil — tapi gue coba.", tag: "motivasi/berani" },
-        { num: 176, text: "Ini yang bikin gue tetap humble di tengah kesuksesan.", tag: "humble/success" },
-        { num: 177, text: "Lo tau nggak? Hal terberat yang pernah gue lakuin adalah memulai.", tag: "ulai/berat" },
-        { num: 178, text: "Gue berhenti takut — dan ini yang terjadi setelahnya.", tag: "berani/transformasi" },
-        { num: 179, text: "Ini yang gue mau denger waktu gue 10 tahun lebih muda.", tag: "advice/younger-self" },
-        { num: 180, text: "Lo sudah lebih berani dari yang lo kira.", tag: "motivasi/berani" }
-    ],
-    controversial: [
-        { num: 181, text: "Unpopular opinion: Banyak hal populer itu overrated — dan ini alasannya.", tag: "opini/kontroversi" },
-        { num: 182, text: "Lo tau nggak? Hal yang umum dipercaya itu bohong.", tag: "mitos/fakta" },
-        { num: 183, text: "Gue berani bilang ini: Banyak hal nggak sebagus yang lo kira.", tag: "opini/kritik" },
-        { num: 184, text: "Stop lakuin hal yang salah — ini kenapa itu sia-sia.", tag: "stop/sia-sia" },
-        { num: 185, text: "Ini yang orang nggak mau denger soal topik populer.", tag: "tabu/kebenaran" },
-        { num: 186, text: "Gue nggak setuju dengan opini populer — dan ini alasannya.", tag: "opini/berbeda" },
-        { num: 187, text: "Lo tau nggak? Hal yang lo pikir membantu, justru merugikan.", tag: "ironi/kesalahan" },
-        { num: 188, text: "Ini kontroversial — tapi gue harus bilang sejujurnya.", tag: "jujur/kontroversi" },
-        { num: 189, text: "Kenapa gue stop banyak hal — dan kenapa lo harus pertimbangkan juga.", tag: "stop/pertimbangan" },
-        { num: 190, text: "Gue dibilang 'gila' karena bilang ini — tapi ini faktanya.", tag: "bukti/gila" },
-        { num: 191, text: "Ini yang nggak orang berani bilang soal industri ini.", tag: "industri/tabunya" },
-        { num: 192, text: "Lo tau nggak? Hal yang lo pikir 'gratis' — sebenernya lo yang dijual.", tag: "bisnis/hidden-cost" },
-        { num: 193, text: "Gue challenge lo untuk bantah ini: Apakah lo berani?", tag: "challenge/debat" },
-        { num: 194, text: "Ini yang terjadi kalau lo berhenti ikut-ikutan tren.", tag: "tren/kritis" },
-        { num: 195, text: "Lo nggak perlu banyak hal untuk sukses — dan ini buktinya.", tag: "sederhana/sukses" },
-        { num: 196, text: "Gue bilang ini karena peduli: Banyak arah yang salah.", tag: "peduli/benar" },
-        { num: 197, text: "Ini yang industri besar nggak mau lo tau.", tag: "industri/rahasia" },
-        { num: 198, text: "Stop percaya mitos ini — ini kenapa itu salah.", tag: "mitos/salah" },
-        { num: 199, text: "Gue tau ini nggak populer — tapi ini fakta.", tag: "fakta/tidak-populer" },
-        { num: 200, text: "Lo tau nggak? Hal yang lo lakuin tiap hari itu bikin lo gagal.", tag: "kebiasaan/gagal" },
-        { num: 201, text: "Ini yang bedain opini gue dari yang lain — gue punya data.", tag: "data/opini" },
-        { num: 202, text: "Gue nggak takut bilang: Banyak yang salah.", tag: "berani/kritik" },
-        { num: 203, text: "Lo bakal hate gue karena ini — tapi ini kebenaran.", tag: "kebenaran/unpopular" },
-        { num: 204, text: "Ini yang nggak ada orang yang berani bilang ke lo.", tag: "tabu/kebenaran" },
-        { num: 205, text: "Gue dulu juga percaya mitos — sampai gue liat ini.", tag: "mitos/pengalaman" },
-        { num: 206, text: "Lo tau nggak? Hal yang lo pikir 'investasi' — sebenernya buang uang.", tag: "investasi/mistake" },
-        { num: 207, text: "Ini yang terjadi kalau lo berhenti ikut standar orang lain.", tag: "standar/bebas" },
-        { num: 208, text: "Gue nggak peduli apa kata orang — kebenaran itu penting.", tag: "kebenaran/opini" },
-        { num: 209, text: "Lo bisa setuju atau nggak — tapi ini yang gue liat di lapangan.", tag: "lapangan/opini" },
-        { num: 210, text: "Ini yang bikin gue 'dibenci' — dan gue OKE dengan itu.", tag: "kontroversi/accept" }
-    ],
-    edukasi: [
-        { num: 211, text: "Ini trik yang gue pelajarin setelah 5 tahun — dalam 60 detik.", tag: "tips/berpengalaman" },
-        { num: 212, text: "Lo tau nggak cara yang 10x lebih cepat? Ini caranya.", tag: "efisiensi/tips" },
-        { num: 213, text: "3 hal yang harus lo tau sebelum terlambat.", tag: "edukasi/warning" },
-        { num: 214, text: "Ini yang gue pelajarin dari sumber terpercaya — dan ini game-changer.", tag: "belajar/game-changer" },
-        { num: 215, text: "Lo lakuin ini tiap hari? Ini cara yang lebih bener.", tag: "tips/perbaikan" },
-        { num: 216, text: "Ini 5 tools yang bikin gue hemat waktu 2 jam per hari.", tag: "tools/productivity" },
-        { num: 217, text: "Lo tau nggak? Fakta mengejutkan tentang hal ini — dan ini aplikasinya.", tag: "fakta/aplikasi" },
-        { num: 218, text: "Ini framework yang gue pakai untuk banyak hal — dan ini hasilnya.", tag: "framework/hasil" },
-        { num: 219, text: "Satu hal yang bedain yang berhasil dan yang gagal.", tag: "perbedaan/kunci" },
-        { num: 220, text: "Lo nggak tau soal ini? Ini penjelasan dalam 30 detik.", tag: "edukasi/cepat" },
-        { num: 221, text: "Ini yang terjadi kalau lo apply teori ini dalam kehidupan nyata.", tag: "teori/praktik" },
-        { num: 222, text: "3 kesalahan fatal yang lo lakuin tanpa lo sadar.", tag: "mistake/kesalahan" },
-        { num: 223, text: "Ini cara profesional lakuin hal ini — dan lo bisa tiruin.", tag: "tips/pro" },
-        { num: 224, text: "Lo tau nggak? Yang lo pikir susah, sebenernya ada shortcut-nya.", tag: "tips/shortcut" },
-        { num: 225, text: "Ini yang gue pelajarin setelah bertahun-tahun di industri ini.", tag: "pengalaman/industri" },
-        { num: 226, text: "5 tanda bahwa lo di jalur yang benar — dan yang nomor 5 paling penting.", tag: "tanda/jalur" },
-        { num: 227, text: "Ini cara gue solve masalah ini dalam setengah waktu — tanpa kualitas turun.", tag: "efisiensi/solve" },
-        { num: 228, text: "Lo lakuin ini tiap hari? Berhenti — ini cara yang lebih bener.", tag: "tips/perbaikan" },
-        { num: 229, text: "Ini yang nggak diajarin di sekolah soal hal ini.", tag: "edukasi/sekolah" },
-        { num: 230, text: "3 tools gratis yang menggantikan software mahal.", tag: "tools/gratis" },
-        { num: 231, text: "Ini pola yang gue temuin dari pengalaman — dan ini bisa lo pakai juga.", tag: "pola/tips" },
-        { num: 232, text: "Lo tau nggak cara yang bikin gue kaget sendiri?", tag: "tips/kejutan" },
-        { num: 233, text: "Ini yang harus lo tau soal hal ini di tahun ini.", tag: "edukasi/update" },
-        { num: 234, text: "Satu perubahan kecil yang bikin hasil jadi 10x lebih efektif.", tag: "tips/perubahan" },
-        { num: 235, text: "Ini yang gue mau tau 5 tahun lalu tentang hal ini.", tag: "tips/penyesalan" },
-        { num: 236, text: "Lo nggak perlu mahir banyak hal — lo perlu tau ini.", tag: "tips/fokus" },
-        { num: 237, text: "Ini 3 langkah gue dari nol sampai hasil nyata.", tag: "langkah/tutorial" },
-        { num: 238, text: "Lo tau nggak? Yang lo pikir 'ribet' sebenernya ada cara instan-nya.", tag: "tips/instan" },
-        { num: 239, text: "Ini yang bikin banyak hal beda — dan kenapa lo harus mulai sekarang.", tag: "tips/mulai" },
-        { num: 240, text: "5 fakta yang bikin gue berpikir ulang.", tag: "fakta/mikir" },
-        { num: 241, text: "Ini cara gue solve masalah ini — dan ini bisa lo pakai juga.", tag: "solve/tips" },
-        { num: 242, text: "Lo lakuin ini? Ini yang lo lewatkan.", tag: "tips/lewat" },
-        { num: 243, text: "Ini yang gue pelajarin dari sumber terpercaya soal hal ini.", tag: "sumber/belajar" },
-        { num: 244, text: "3 hal yang harus lo stop lakuin sekarang.", tag: "stop/mistake" },
-        { num: 245, text: "Ini yang terjadi kalau lo konsisten selama 30 hari.", tag: "konsisten/hasil" },
-        { num: 246, text: "Lo tau nggak? Banyak hal punya trik yang nggak orang banyak tau.", tag: "trik/rahasia" },
-        { num: 247, text: "Ini framework yang dipake orang sukses — dijelasin simpel.", tag: "framework/sukses" },
-        { num: 248, text: "Lo nggak butuh banyak hal — lo butuh fokus.", tag: "fokus/tips" },
-        { num: 249, text: "Ini yang gue pelajarin setelah gagal berkali-kali soal hal ini.", tag: "gagal/belajar" },
-        { num: 250, text: "Satu tips yang bakal ubah cara lo selamanya.", tag: "tips/game-changer" }
-    ],
-    story: [
-        { num: 251, text: "Ini cerita gue dari nol sampai sukses — dan ini bukan keberuntungan.", tag: "cerita/inspirasi" },
-        { num: 252, text: "Gue nggak pernah cerita ini ke siapapun — tapi sekarang gue ready.", tag: "personal/vulnerabel" },
-        { num: 253, text: "3 tahun lalu gue di posisi lo sekarang — ini yang gue pelajarin.", tag: "pengalaman/lesson" },
-        { num: 254, text: "Ini yang terjadi kalau lo berani ambil risiko yang gue ambil.", tag: "risiko/berani" },
-        { num: 255, text: "Gue hampir menyerah hari itu — tapi sesuatu terjadi.", tag: "gagal/hampir-menyerah" },
-        { num: 256, text: "Ini cerita yang bikin gue berubah total — dan mungkin bisa ubah lo juga.", tag: "transformasi/cerita" },
-        { num: 257, text: "Lo tau nggak rasanya di titik terendah? Gue tau — ini cerita gue.", tag: "relatable/struggle" },
-        { num: 258, text: "Ini yang gue lakuin setelah kejadian buruk — dan ini hasilnya.", tag: "after/hasil" },
-        { num: 259, text: "Gue dulu orang yang paling nggak mungkin sukses — sekarang bukti nyata.", tag: "sukses/tidak-mungkin" },
-        { num: 260, text: "Ini momen yang bikin gue sadar — gue harus berubah.", tag: "realisasi/perubahan" },
-        { num: 261, text: "Gue inget banget hari itu — ini yang terjadi.", tag: "momen/cerita" },
-        { num: 262, text: "Ini cerita yang nggak gue banggain — tapi ini yang bikin gue kuat.", tag: "kekuatan/cerita" },
-        { num: 263, text: "Lo tau kenapa gue mulai perjalanan ini? Ini ceritanya.", tag: "ulai/cerita" },
-        { num: 264, text: "Ini yang terjadi kalau lo terus jalan meski nggak ada yang percaya.", tag: "persistence/persepsi" },
-        { num: 265, text: "Gue di titik terendah — ini yang gue lakuin selanjutnya.", tag: "terendah/action" },
-        { num: 266, text: "Ini cerita dari orang yang hampir menyerah — tapi nggak.", tag: "hampir-menyerah" },
-        { num: 267, text: "Gue nggak tau ini bakal jadi cerita sukses — waktu itu cuma coba-coba.", tag: "sukses/awal" },
-        { num: 268, text: "Ini yang gue pelajarin dari kejadian yang hampir menghancurkan gue.", tag: "hancur/belajar" },
-        { num: 269, text: "Lo pernah ngerasain hal ini? Ini yang terjadi sama gue.", tag: "relatable/cerita" },
-        { num: 270, text: "Ini cerita yang bikin gue nangis — dan sekarang gue tersenyum.", tag: "transformasi/emosi" },
-        { num: 271, text: "Gue berhenti dengerin orang lain — dan ini yang terjadi.", tag: "independent/opini" },
-        { num: 272, text: "Ini yang gue lakuin setelah sembilang 'gagal'.", tag: "gagal/setelah" },
-        { num: 273, text: "Gue nggak punya koneksi, nggak punya modal — ini yang gue punya.", tag: "minim-sumber-daya" },
-        { num: 274, text: "Ini cerita yang mungkin mirip dengan cerita lo.", tag: "relatable/cerita" },
-        { num: 275, text: "Gue pernah di posisi lo — dan ini yang bantu gue keluar.", tag: "position/advice" },
-        { num: 276, text: "Ini yang terjadi kalau lo berani mulai meski nggak siap.", tag: "ulai/tidak-siap" },
-        { num: 277, text: "Gue belajar ini dengan cara yang paling menyakitkan — ini ceritanya.", tag: "sakit/cerita" },
-        { num: 278, text: "Ini momen yang bikin gue berhenti mikirin apa kata orang.", tag: "opini/bebas" },
-        { num: 279, text: "Lo tau rasanya di posisi ini? Gue juga — ini yang gue lakuin.", tag: "relatable/action" },
-        { num: 280, text: "Ini cerita gue — dan ini mungkin awal dari cerita lo.", tag: "cerita/awal" }
-    ],
-    urgency: [
-        { num: 281, text: "Ini info yang bakal expired sebentar lagi — simpen baik-baik.", tag: "urgency/expired" },
-        { num: 282, text: "Lo bakal menyesal kalau nggak tau ini sebelum terlambat.", tag: "penyesalan/urgency" },
-        { num: 283, text: "Ini yang bakal berubah di waktu dekat — dan lo harus siap.", tag: "change/siap" },
-        { num: 284, text: "Jangan scroll dulu — ini penting banget untuk lo.", tag: "stop/penting" },
-        { num: 285, text: "Ini yang nggak bakal orang lain kasih tau lo.", tag: "rahasia/exclusive" },
-        { num: 286, text: "Lo punya 10 detik? Ini yang harus lo tau.", tag: "cepat/urgency" },
-        { num: 287, text: "Ini yang bakal trending minggu depan — lo harus tau sekarang.", tag: "trending/cepat" },
-        { num: 288, text: "Jangan skip ini — ini yang bikin beda.", tag: "skip/beda" },
-        { num: 289, text: "Ini yang terjadi kalau lo nggak mulai hari ini.", tag: "konsekuensi/mulai" },
-        { num: 290, text: "Lo bakal ketinggalan kalau nggak nonton ini sampai habis.", tag: "fomo/ketinggalan" },
-        { num: 291, text: "Ini yang harus lo tau SEBELUM hari ini berakhir.", tag: "before/deadline" },
-        { num: 292, text: "Jangan save dulu — baca ini dulu.", tag: "save/read" },
-        { num: 293, text: "Ini yang bakal naik daun — dan lo harus tau sekarang.", tag: "naik/tau" },
-        { num: 294, text: "Lo nggak mau ketinggalan ini — trust me.", tag: "trust/fomo" },
-        { num: 295, text: "Ini yang bakal game-changer buat lo di waktu dekat.", tag: "game-changer/soon" },
-        { num: 296, text: "Jangan tunggu sampai terlambat — ini yang harus lo lakuin sekarang.", tag: "terlambat/action" },
-        { num: 297, text: "Ini yang orang cari tapi nggak tau harus mulai dari mana.", tag: "cari/start" },
-        { num: 298, text: "Lo bakal beri thanks ke gue setelah baca ini.", tag: "thanks/read" },
-        { num: 299, text: "Ini yang bikin lo satu langkah lebih depan dari yang lain.", tag: "langkah/depan" },
-        { num: 300, text: "Jangan lewatkan ini — ini yang bikin beda antara yang berhasil dan yang nggak.", tag: "lewatkan/beda" }
-    ]
-};
-
-// ===== RENDER HOOKS =====
-let currentCategory = 'curiosity';
-let displayedCount = 0;
-const HOOKS_PER_LOAD = 15;
-
-function getCategoryName(cat) {
-    const names = {
-        curiosity: '🎯 Curiosity Hooks',
-        shock: '😱 Shock Value Hooks',
-        money: '💰 Money Hooks',
-        emotional: '❤️ Emotional Hooks',
-        controversial: '🔥 Controversial Hooks',
-        edukasi: '📚 Edukasi Hooks',
-        story: '🎬 Story Hooks',
-        urgency: '⏰ Urgency & FOMO Hooks'
-    };
-    return names[cat] || cat;
-}
-
-function renderHooks(category, searchTerm = '') {
-    const grid = document.getElementById('hooksGrid');
-    let hooks = hooksData[category] || [];
-
-    if (searchTerm) {
-        hooks = hooks.filter(h => h.text.toLowerCase().includes(searchTerm.toLowerCase()) || h.tag.toLowerCase().includes(searchTerm.toLowerCase()));
-    }
-
-    const totalHooks = hooks.length;
-    const toShow = Math.min(displayedCount + HOOKS_PER_LOAD, totalHooks);
-    const visibleHooks = hooks.slice(0, toShow);
-
-    let html = `<div style="margin-bottom:15px; font-size:0.9em; color:#6B7280;">Menampilkan ${visibleHooks.length} dari ${totalHooks} hook — <strong>${getCategoryName(category)}</strong></div>`;
-
-    visibleHooks.forEach(hook => {
-        html += `
-        <div class="hook-card">
-            <span class="hook-number">${hook.num}</span>
-            <span class="hook-text">${highlightSearch(hook.text, searchTerm)}</span>
-            <span class="hook-tag">${hook.tag}</span>
-            <button class="copy-btn" data-hook="${encodeURIComponent(hook.text)}" onclick="copyHook(this)">📋 Copy</button>
-        </div>`;
-    });
-
-    grid.innerHTML = html;
-
-    // Load more button
-    const loadMoreContainer = document.getElementById('loadMoreContainer');
-    if (toShow < totalHooks) {
-        loadMoreContainer.style.display = 'block';
-    } else {
-        loadMoreContainer.style.display = 'none';
-    }
-}
-
-function highlightSearch(text, term) {
-    if (!term) return text;
-    const escaped = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-    const regex = new RegExp(`(${escaped})`, 'gi');
-    return text.replace(regex, '<mark>$1</mark>');
-}
-
-function showCategory(cat) {
-    currentCategory = cat;
-    displayedCount = 0;
-    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-    event.target.classList.add('active');
-    renderHooks(cat);
-}
-
-function loadMore() {
-    displayedCount += HOOKS_PER_LOAD;
-    const searchTerm = document.getElementById('searchInput').value;
-    renderHooks(currentCategory, searchTerm);
-}
-
-function searchHooks() {
-    displayedCount = 0;
-    const term = document.getElementById('searchInput').value;
-    renderHooks(currentCategory, term);
-}
-
-function copyHook(btn) {
-    const text = decodeURIComponent(btn.getAttribute('data-hook'));
-    navigator.clipboard.writeText(text).then(() => {
-        const original = btn.textContent;
-        btn.textContent = '✅ Copied!';
-        btn.classList.add('copied');
-        setTimeout(() => {
-            btn.textContent = original;
-            btn.classList.remove('copied');
-        }, 1500);
-    });
-}
-
-// ===== DOWNLOAD / BONUS =====
-function downloadFile(type) {
-    const files = {
-        pdf: { name: 'Viral-Hook-Vault-300-Hooks.pdf', msg: 'PDF 300+ Hook akan di-download...' },
-        sheets: { name: 'Google Sheets', msg: 'Membuka Google Sheets...' },
-        canva: { name: 'Canva Templates', msg: 'Membuka Canva Templates...' },
-        auditor: { name: 'Hook-Sheets-Auditor.gsheet', msg: 'Membuka Hook Auditor...' },
-        swipe: { name: 'Swipe-File-50-Viral-Content.pdf', msg: 'Download Swipe File...' }
-    };
-    alert(files[type].msg + '\n\nFile: ' + files[type].name + '\n\n(Nanti akan terhubung ke Google Drive/Dropbox)');
-}
-
-function showBonus(type) {
-    const bonuses = {
-        formula: {
-            title: '📐 Hook Formula Cheat Sheet',
-            content: `
-                <h3 style="color:#3B82F6; margin-bottom:15px;">5 Formula Universal Bikin Hook Viral</h3>
-                <ol style="line-height:2.2; padding-left:20px;">
-                    <li><strong>Formula 1: "Ternyata [hal umum] itu [kejutan]"</strong><br><em style="color:#6B7280;">Contoh: "Ternyata cara kita masak nasi selama ini SALAH."</em><br>💡 Kenapa kerja: Challenge assumption → curiosity gap</li>
-                    <li><strong>Formula 2: "Ini yang nggak pernah [siapapun] ajarin soal [topik]"</strong><br><em style="color:#6B7280;">Contoh: "Ini yang nggak pernah diajarin siapapun soal uang..."</em><br>💡 Kenapa kerja: Exclusivity + curiosity</li>
-                    <li><strong>Formula 3: "Gue [aksi] selama [waktu] — ini yang terjadi"</strong><br><em style="color:#6B7280;">Contoh: "Gue coba ini selama 7 hari dan hasilnya bikin gue kaget."</em><br>💡 Kenapa kerja: Social proof + specific + curiosity</li>
-                    <li><strong>Formula 4: "Stop [X] — ini kenapa itu [negatif]"</strong><br><em style="color:#6B7280;">Contoh: "Stop lakuin ini — ini kenapa itu sia-sia."</em><br>💡 Kenapa kerja: Controversial + urgency</li>
-                    <li><strong>Formula 5: "Lo tau nggak kenapa [X]? Ini jawabannya."</strong><br><em style="color:#6B7280;">Contoh: "Lo tau nggak kenapa konten lo sepi? Ini jawabannya."</em><br>💡 Kenapa kerja: Direct address + pain point + promise</li>
-                </ol>
-                <hr style="margin:20px 0;">
-                <h4 style="color:#3B82F6;">Bonus: Template Hook Generator</h4>
-                <p><strong>[Emosi] + [Topik] + [Kejutan/Janji]</strong></p>
-                <p><em>Contoh: "Gue kaget + soal uang + ternyata ini yang bikin kita miskin"</em></p>
-                <p><strong>Hasil:</strong> "Gue kaget — ternyata ini yang bikin kita miskin selama ini."</p>
-            `
-        }
-    };
-
-    const bonus = bonuses[type];
-    document.getElementById('bonusTitle').textContent = bonus.title;
-    document.getElementById('bonusContent').innerHTML = bonus.content;
-    document.getElementById('bonusModal').classList.add('active');
-}
-
-function closeBonus() {
-    document.getElementById('bonusModal').classList.remove('active');
-}
-
-// ===== STICKY BAR =====
-window.addEventListener('scroll', function() {
-    const sticky = document.getElementById('stickyBar');
-    if (window.scrollY > 600) {
-        sticky.style.display = 'block';
-    } else {
-        sticky.style.display = 'none';
-    }
-});
-
-// ===== INIT =====
-document.addEventListener('DOMContentLoaded', function() {
-    renderHooks('curiosity');
-    // Set user name from URL param (simulated)
-    const params = new URLSearchParams(window.location.search);
-    const name = params.get('name') || 'Member';
-    document.getElementById('userName').textContent = name;
-});
-</script>
-
 
 <!-- BONUS MODAL -->
 <div class="modal-overlay" id="bonusModal">
     <div class="modal-content">
         <button class="modal-close" onclick="closeBonus()">✕</button>
-        <h2 id="bonusTitle" style="color:#3B82F6; margin-bottom:15px;"></h2>
-        <div id="bonusContent"></div>
+        <h3>📐 5 Formula Universal Bikin Hook Viral</h3>
+        <ol>
+            <li><strong>Formula 1: "Ternyata [hal umum] itu [kejutan]"</strong><br><em style="color:#6B7280;">Contoh: "Ternyata cara kita masak nasi selama ini SALAH."</em><br>💡 Kenapa kerja: Challenge assumption → curiosity gap</li>
+            <li><strong>Formula 2: "Ini yang nggak pernah [siapapun] ajarin soal [topik]"</strong><br><em style="color:#6B7280;">Contoh: "Ini yang nggak pernah diajarin siapapun soal uang..."</em><br>💡 Kenapa kerja: Exclusivity + curiosity</li>
+            <li><strong>Formula 3: "Gue [aksi] selama [waktu] — ini yang terjadi"</strong><br><em style="color:#6B7280;">Contoh: "Gue coba ini selama 7 hari dan hasilnya bikin gue kaget."</em><br>💡 Kenapa kerja: Social proof + specific + curiosity</li>
+            <li><strong>Formula 4: "Stop [X] — ini kenapa itu [negatif]"</strong><br><em style="color:#6B7280;">Contoh: "Stop lakuin ini — ini kenapa itu sia-sia."</em><br>💡 Kenapa kerja: Controversial + urgency</li>
+            <li><strong>Formula 5: "Lo tau nggak kenapa [X]? Ini jawabannya."</strong><br><em style="color:#6B7280;">Contoh: "Lo tau nggak kenapa konten lo sepi? Ini jawabannya."</em><br>💡 Kenapa kerja: Direct address + pain point + promise</li>
+        </ol>
+        <hr style="margin:20px 0;">
+        <h4 style="color:#3B82F6;">Bonus: Template Hook Generator</h4>
+        <p><strong>[Emosi] + [Topik] + [Kejutan/Janji]</strong></p>
+        <p><em>Contoh: "Gue kaget + soal uang + ternyata ini yang bikin kita miskin"</em></p>
+        <p><strong>Hasil:</strong> "Gue kaget — ternyata ini yang bikin kita miskin selama ini."</p>
     </div>
 </div>
 
 <footer>
     <p>🎯 Viral Hook Vault © 2026 | Selamat bikin konten viral! 🚀</p>
 </footer>
+
+<script>
+function copyText(btn, text) {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(function() {
+            showCopied(btn);
+        }).catch(function() {
+            fallbackCopy(text, btn);
+        });
+    } else {
+        fallbackCopy(text, btn);
+    }
+}
+function fallbackCopy(text, btn) {
+    var ta = document.createElement('textarea');
+    ta.value = text;
+    ta.style.position = 'fixed';
+    ta.style.opacity = '0';
+    document.body.appendChild(ta);
+    ta.select();
+    try {
+        document.execCommand('copy');
+        showCopied(btn);
+    } catch(e) {
+        alert('Copy gagal, silakan copy manual:\n' + text);
+    }
+    document.body.removeChild(ta);
+}
+function showCopied(btn) {
+    btn.textContent = '✅ Copied!';
+    btn.classList.add('copied');
+    setTimeout(function() {
+        btn.textContent = '📋 Copy';
+        btn.classList.remove('copied');
+    }, 1500);
+}
+function showBonus() {
+    document.getElementById('bonusModal').classList.add('active');
+}
+function closeBonus() {
+    document.getElementById('bonusModal').classList.remove('active');
+}
+document.getElementById('bonusModal').addEventListener('click', function(e) {
+    if (e.target === this) closeBonus();
+});
+</script>
 
 </body>
 </html>
